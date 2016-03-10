@@ -1,5 +1,4 @@
-/* TODO: Add some coordinated colors to make the blog more distinguished:
-         Use an accent color for all links, and remove their underline. */
+
 
 body {
   display: block;
@@ -12,6 +11,12 @@ body {
 hr {
   margin: 1em;
   width: 80%;
+}
+
+.tab-content {
+
+  margin-top: 100px;
+  text-align: center;
 }
 
 /*TEXT STYLES

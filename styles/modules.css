@@ -1,12 +1,19 @@
 
-.site-header {
-  padding: .1em;
+.main-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #A67563;
 }
 
 .main-nav {
+  position: relative;
+  right: 25%;
+  margin-top: 30px;
   padding: 0;
-  /*list-style: none;*/
-  /*clear: both;*/
+  list-style: none;
 }
 .main-nav ul {
   padding: 0px;
@@ -20,42 +27,58 @@
   padding: .5em .2em;
   list-style-type: none;
   height: 40px;
-  /*border-bottom: 1px solid #ccc;*/
 }
 
 .about img{
+  margin-bottom: 0;
+  width: 25%;
+  height: 25%;
   border-radius: 50%;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+}
+
+.about p {
+  display: block;
+  width: 25%;
+  position: relative;
+  left: 700px;
+  margin-top: 50px;
 }
 
 a:link{
   text-decoration: none;
 }
-/*#filters {
-  padding: 0;
+
+.template {
+  display: none;
 }
 
-#filters select {
 
-}*/
-
-/*.template {
-  display: none;
-}*/
-
-/*.byline {
-  color: #777;
-}*/
-
-/*.byline a {
+.byline a {
   font-weight: bold;
   text-decoration: none;
-}*/
-
-.pull-left {
-  float: left;
 }
 
-.pull-right {
-  float: right;
+.main-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0px;
+  list-style: none;
+  clear: both;
+}
+
+.main-footer ul {
+  padding: 0px;
+  margin: 0px;
+}
+.main-footer li {
+  display: inline;
+  padding: 20px;
+  margin-right: .4em;
+  font-size: 1em;
+  padding: .5em .2em;
+  list-style-type: none;
+  height: 40px;
 }

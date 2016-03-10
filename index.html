@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="main-header">
     <h1>Benjamin Nolan</h1>
     <nav class="main-nav">
       <ul>
@@ -23,7 +23,8 @@
     </nav>
   </header>
   <section id="about" class="about tab-content">
-    <header>About Me</header>
+    <header>
+      <h2>About Me</h2></header>
     <section>
       <img src="BenNolanProfile.jpg" alt="ProfilePic">
       <p>
@@ -33,17 +34,21 @@
   </section>
 
   <section id="project" class="tab-content">
-    <header>Projects</header>
+    <header>
+      <h2>Projects</h2></header>
     <section>
       <article class="template template">
         <header>
-          <h1>Title</h1>
+          <h3>Title</h3>
+          <section class="project-img">
+            <img alt="">
+          </section>
+          <section class="project-body"></section>
           <div class="byline">
             By <address><a href="">Author Name</a></address> published
             <time pubdate datetime="2000-01-01">Publish Time</time>
           </div>
         </header>
-        <section class="project-body"></section>
       </article>
     </section>
   </section>
@@ -56,27 +61,26 @@
       </p>
     </section>
   </section>
-  <footer>
+  <footer class="main-footer">
     <ul>
-      <li class="icon-twitter">
-        <a href="https://twitter.com/bonecrushereb"></a>
+      <li>
+        <a class="icon-twitter" href="https://twitter.com/bonecrushereb"></a>
       </li>
-      <li class="icon-github">
-        <a href="https://github.com/bonecrushereb"></a>
+      <li>
+        <a class="icon-github" href="https://github.com/bonecrushereb"></a>
       </li>
-      <li class="icon-facebook2">
-        <a href="https://www.facebook.com/BenEnOlan"></a>
+      <li>
+        <a class="icon-facebook2" href="https://www.facebook.com/BenEnOlan"></a>
       </li>
-      <li class="icon-linkedin">
-        <a href="https://www.linkedin.com/in/ben-nolan-28513349"></a>
+      <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/in/ben-nolan-28513349"></a>
       </li>
     </ul>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="scripts/projectData.js"></script>
-  <script src="scripts/app.js">
-    < script src = "scripts/PortfolioView.js" >
-  </script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/PortfolioView.js"></script>
 </body>
 
 </html>

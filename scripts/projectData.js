@@ -1,4 +1,4 @@
-var rawData = [
+var projectData = [
   {
     title:       'Game Art Portfolio',
     author:      'Ben Nolan',
