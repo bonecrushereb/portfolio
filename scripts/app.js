@@ -24,6 +24,7 @@ Projects.prototype.toHtml = function() {
   $newProjects.find('.project-body').html(this.body);
   $newProjects.find('time[pubdate]').attr('datetime', this.publishedOn);
   $newProjects.find('time[pubdate]').attr('title', this.publishedOn);
+  $newProjects.find('.project-img img').attr('src', this.img);
 
   $newProjects.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
 
