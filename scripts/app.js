@@ -17,7 +17,7 @@ Projects.prototype.toHtml = function() {
   }
   // console.log('hello there');
 
-  $newProjects.find('h1:first').text(this.title);
+  $newProjects.find('h3:first').text(this.title);
   $newProjects.find('.byline a').attr('data-author', this.author);
   $newProjects.find('.byline a').html(this.author);
   $newProjects.attr('data-authorUrl', this.authorUrl);
