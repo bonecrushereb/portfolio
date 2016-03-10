@@ -10,11 +10,12 @@ function Projects (opts) {
 }
 
 Projects.prototype.toHtml = function() {
-  var $newProjects = $('Projects.template').clone();
+  var $newProjects = $('#project .template').clone();
   $newProjects.removeClass('template');
   if (!this.publishedOn) {
     $newProjects.addClass('draft');
   }
+  // console.log('hello there');
 
   $newProjects.find('h1:first').text(this.title);
   $newProjects.find('.byline a').attr('data-author', this.author);
@@ -27,7 +28,7 @@ Projects.prototype.toHtml = function() {
   $newProjects.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
 
   $newProjects.append('<hr>');
-
+console.log($newProjects);
   return $newProjects;
 };
 
@@ -40,5 +41,5 @@ rawData.forEach(function(ele) {
 });
 
 projects.forEach(function(a){
-  $('#Projects').append(a.toHtml());
+  $('#project').append(a.toHtml());
 });
