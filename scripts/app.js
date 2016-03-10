@@ -10,25 +10,25 @@ function Projects (opts) {
 }
 
 Projects.prototype.toHtml = function() {
-  var $Projects = $('Projects.template').clone();
-  $Projects.removeClass('template');
+  var $newProjects = $('Projects.template').clone();
+  $newProjects.removeClass('template');
   if (!this.publishedOn) {
-    $Projects.addClass('draft');
+    $newProjects.addClass('draft');
   }
 
-  $newProject.find('h1:first').text(this.title);
-  $newProject.find('.byline a').attr('data-author', this.author);
-  $newProject.find('.byline a').html(this.author);
-  $newProject.attr('data-authorUrl', this.authorUrl);
-  $newProject.find('.project-body').html(this.body);
-  $newProject.find('time[pubdate]').attr('datetime', this.publishedOn);
-  $newProject.find('time[pubdate]').attr('title', this.publishedOn);
+  $newProjects.find('h1:first').text(this.title);
+  $newProjects.find('.byline a').attr('data-author', this.author);
+  $newProjects.find('.byline a').html(this.author);
+  $newProjects.attr('data-authorUrl', this.authorUrl);
+  $newProjects.find('.project-body').html(this.body);
+  $newProjects.find('time[pubdate]').attr('datetime', this.publishedOn);
+  $newProjects.find('time[pubdate]').attr('title', this.publishedOn);
 
-  $newProject.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
+  $newProjects.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
 
-  $newProject.append('<hr>');
+  $newProjects.append('<hr>');
 
-  return $newProject;
+  return $newProjects;
 };
 
 rawData.sort(function(a,b) {
@@ -36,9 +36,9 @@ rawData.sort(function(a,b) {
 });
 
 rawData.forEach(function(ele) {
-  Projectss.push(new Article(ele));
+  projects.push(new Projects(ele));
 });
 
-Projectss.forEach(function(a){
-  $('#Projectss').append(a.toHtml());
+projects.forEach(function(a){
+  $('#Projects').append(a.toHtml());
 });
