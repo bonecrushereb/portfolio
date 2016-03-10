@@ -1,70 +1,82 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Ben Nolan Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="vendor/styles/normalize.css">
-    <link rel="stylesheet" href="styles/icons.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/modules.css">
-  </head>
-  <body>
-    <header>
-      <h1>Benjamin Nolan</h1>
-      <nav class="main-nav">
-        <ul>
-          <li class="tab icon-book" data-content="about"><a href="#">About</a></li>
-          <li class="tab icon-folder" data-content="project"><a href="#">Projects</a></li>
-          <li class="tab icon-stats-bars" data-content="skills"><a href="#">Skills</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section id="about" class="about tab-content">
-      <header>About Me</header>
-      <section>
-        <img src="BenNolanProfile.jpg" alt="ProfilePic">
-        <p>
-        Hello, my name is Benjamin Nolan. I have a passion for all things art but focus on web development. My focus is in front-end development with skills that include responsive Html, CSS, Javascript, jQuery.
-        </p>
-      </section>
-    </section>
 
-    <section id="project" class="tab-content">
-      <header>Projects</header>
-      <section>
-        <article>
-          <h3>Game Art Site</h3>
-          <img src="GameArtWebSite.jpg" alt="GameArtSite">
-        </article>
-        <article>
-          <h3>Skydiving Experience</h3>
-          <img src="SkydivingExperience.jpg" alt="Skydiving">
-        </article>
-        <article>
-          <h3>United By Dna Mockup</h3>
-          <img src="unitedbydenamockup.jpg" alt="mockup">
-        </article>
-      </section>
-    </section>
+<head>
+  <meta charset="utf-8">
+  <title>Ben Nolan Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="vendor/styles/normalize.css">
+  <link rel="stylesheet" href="styles/icons.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/modules.css">
+</head>
 
-    <section id="skills" class="tab-content">
-      <header>Skills</header>
-      <section>
-        <p>
-        graph goes here
-        </p>
-      </section>
-    </section>
-    <footer>
+<body>
+  <header>
+    <h1>Benjamin Nolan</h1>
+    <nav class="main-nav">
       <ul>
-        <li class="icon-twitter"><a href="https://twitter.com/bonecrushereb"></a></li>
-        <li class="icon-github"><a href=""</li>
-        <li class="icon-facebook2"></li>
-        <li class="icon-linkedin"></li>
+        <li class="tab icon-book" data-content="about"><a href="#">About</a></li>
+        <li class="tab icon-folder" data-content="project"><a href="#">Projects</a></li>
+        <li class="tab icon-stats-bars" data-content="skills"><a href="#">Skills</a></li>
       </ul>
-    </footer>
+    </nav>
+  </header>
+  <section id="about" class="about tab-content">
+    <header>About Me</header>
+    <section>
+      <img src="BenNolanProfile.jpg" alt="ProfilePic">
+      <p>
+        Hello, my name is Benjamin Nolan. I have a passion for all things art but focus on web development. My focus is in front-end development with skills that include responsive Html, CSS, Javascript, jQuery.
+      </p>
+    </section>
+  </section>
+
+  <section id="project" class="tab-content">
+    <header>Projects</header>
+    <section>
+      <article class="template template">
+        <header>
+          <h1>Title</h1>
+          <div class="byline">
+            By <address><a href="">Author Name</a></address> published
+            <time pubdate datetime="2000-01-01">Publish Time</time>
+          </div>
+        </header>
+        <section class="project-body"></section>
+      </article>
+    </section>
+  </section>
+
+  <section id="skills" class="tab-content">
+    <header>Skills</header>
+    <section>
+      <p>
+        graph goes here
+      </p>
+    </section>
+  </section>
+  <footer>
+    <ul>
+      <li class="icon-twitter">
+        <a href="https://twitter.com/bonecrushereb"></a>
+      </li>
+      <li class="icon-github">
+        <a href="https://github.com/bonecrushereb"></a>
+      </li>
+      <li class="icon-facebook2">
+        <a href="https://www.facebook.com/BenEnOlan"></a>
+      </li>
+      <li class="icon-linkedin">
+        <a href="https://www.linkedin.com/in/ben-nolan-28513349"></a>
+      </li>
+    </ul>
+  </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="scripts/PortfolioView.js"></script>
-  </body>
+  <script src="scripts/projectData.js"></script>
+  <script src="scripts/app.js">
+    < script src = "scripts/PortfolioView.js" >
+  </script>
+</body>
+
 </html>
