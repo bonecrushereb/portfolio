@@ -29,15 +29,15 @@ Projects.prototype.toHtml = function() {
   $newProjects.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
 
   $newProjects.append('<hr>');
-console.log($newProjects);
+  // console.log($newProjects);
   return $newProjects;
 };
 
-rawData.sort(function(a,b) {
+projectData.sort(function(a,b) {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
 
-rawData.forEach(function(ele) {
+projectData.forEach(function(ele) {
   projects.push(new Projects(ele));
 });
 
