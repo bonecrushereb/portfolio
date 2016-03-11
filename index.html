@@ -10,6 +10,23 @@
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/modules.css">
   <link rel="stylesheet" href="styles/state.css">
+
+  <script id="project-template" type="text/x-handlebars-template">
+          <header>
+            <h3>{{Title}}</h3>
+            <section class="project-img">
+              <img alt="">
+            </section>
+            <section class="project-body">
+            {{body}}
+            </section>
+            <div class="byline">
+              By <address><a href="{{authorUrl}}">Author Name</a></address> published
+              <time pubdate datetime="{publishedOn}">Publish Time</time>
+            </div>
+          </header>
+
+  </script>
 </head>
 
 <body>
@@ -79,6 +96,7 @@
     </ul>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
   <script src="scripts/projectData.js"></script>
   <script src="scripts/app.js"></script>
   <script src="scripts/PortfolioView.js"></script>
