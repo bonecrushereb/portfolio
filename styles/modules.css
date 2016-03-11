@@ -9,11 +9,6 @@
   background: #A67563;
 }
 
-.icon-menu {
-  position: absolute;
-  top: 0;
-  left: 100%;
-}
 .main-nav {
   position: relative;
   width: 100%;
@@ -21,36 +16,28 @@
   padding: 0;
   list-style: none;
 }
-/*.main-nav ul {
+.main-nav ul {
   display: flex;
   width: 100%;
   padding: 0px;
   margin: 0px;
-}*/
-.main-nav ul{
-  display: flex;
-}
-.main-nav li{
-  display: block;
-  width: 100%;
 }
 
 .main-nav:hover ul {
   display: block;
 }
 
-/*.main-nav li {
+.main-nav li {
   display: block;
   width: 100%;
-  display: inline;
+  /*display: inline;*/
   padding: 20px;
-  margin-right: .4em;s
+  margin-right: .4em;
   font-size: 1.5em;
   padding: .5em .2em;
   list-style-type: none;
   height: 40px;
-}*/
-
+}
 
 .icon-menu {
   position: absolute;
