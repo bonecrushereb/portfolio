@@ -24,7 +24,7 @@
   margin: 0px;
 }
 
-.main-nav:hover ul {
+.icon-menu:hover + .main-nav ul {
   display: block;
 }
 

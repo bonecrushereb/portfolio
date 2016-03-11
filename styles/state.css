@@ -9,4 +9,29 @@
   .icon-menu {
     display: none;
   }
+
+  .main-nav {
+    position: absolute;
+    width: 100%;
+    margin-top: 21px;
+    padding: 0;
+    list-style: none;
+  }
+  .main-nav ul {
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .main-nav li {
+    width: 100%;
+    display: inline;
+    padding: 20px;
+    margin-right: .4em;
+    font-size: 1.5em;
+    padding: .5em .2em;
+    list-style-type: none;
+    height: 40px;
+  }
 }
