@@ -16,11 +16,20 @@
   list-style: none;
 }
 .main-nav ul {
+  display: flex;
+  width: 100%;
   padding: 0px;
   margin: 0px;
 }
+
+.main-nav:hover ul {
+  display: block;
+}
+
 .main-nav li {
-  display: inline;
+  display: block;
+  width: 100%;
+  /*display: inline;*/
   padding: 20px;
   margin-right: .4em;
   font-size: 1.5em;
@@ -29,19 +38,36 @@
   height: 40px;
 }
 
+.icon-menu {
+  position: absolute;
+  right: 0;
+}
+/*.main-nav ul{
+  display: flex;
+}
+.main-nav li{
+  display: block;
+  width: 100%;
+}*/
+
+.about-container {
+  width: 100%;
+}
 .about img{
   margin-bottom: 0;
-  width: 25%;
-  height: 25%;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
 }
-
-.about p {
+div {
+  width: 100%;
+}
+div p {
   display: block;
   width: 25%;
-  position: relative;
-  left: 700px;
+  position: absolute;
+  left: 37.5%;
   margin-top: 50px;
 }
 
