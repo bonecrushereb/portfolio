@@ -90,6 +90,14 @@ a:link{
   clear: both;
 }
 
+.project-img img {
+  width: 100%;
+}
+
+.project-img img:hover {
+  width: 75%;
+}
+
 .main-footer ul {
   padding: 0px;
   margin: 0px;
