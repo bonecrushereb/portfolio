@@ -39,4 +39,9 @@
     width: 50%;
     height: 50%;
   }
+
+  .project-img img:hover {
+    width: 25%;
+    height: 25%;
+  }
 }
