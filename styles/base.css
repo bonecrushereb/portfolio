@@ -5,7 +5,8 @@ body {
   line-height: 1.5;
   font-size: 100%;
   color: #0D0D0D;
-  background: #73726f;
+  background: #168BBA;
+  position: relative;
 }
 
 hr {
@@ -33,7 +34,7 @@ address {
 =======================================*/
 
 a, a:link, a:active {
-  color: #0D0D0D;
+  color: ##0D0D0D;
 }
 
 a:hover, a:focus {

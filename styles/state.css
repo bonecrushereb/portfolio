@@ -35,6 +35,17 @@
     height: 40px;
   }
 
+  div {
+    width: 100%;
+  }
+  div p {
+    display: block;
+    width: 25%;
+    position: relative;
+    left: 37.5%;
+    margin-top: 25px;
+  }
+
   .project-img img {
     width: 50%;
     height: 50%;
@@ -43,5 +54,27 @@
   .project-img img:hover {
     width: 25%;
     height: 25%;
+  }
+
+  .main-footer {
+    position: absolute;
+    bottom: 0;
+    background: #f0f0f0;
+    width: 100%;
+  }
+
+  .main-footer ul {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+  }
+  .main-footer li {
+    display: inline;
+    padding: 20px;
+    margin-right: .4em;
+    font-size: 1em;
+    padding: .5em .2em;
+    list-style-type: none;
+    height: 40px;
   }
 }
