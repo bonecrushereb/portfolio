@@ -19,10 +19,6 @@ Projects.prototype.toHtml = function() {
   return template(this);
 };
 
-projectData.sort(function(a,b) {
-  return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
-});
-
 projectData.forEach(function(ele) {
   projects.push(new Projects(ele));
 });

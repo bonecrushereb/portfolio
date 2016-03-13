@@ -12,19 +12,18 @@
   <link rel="stylesheet" href="styles/state.css">
 
   <script id="project-template" type="text/x-handlebars-template">
-          <header>
-            <h3>{{Title}}</h3>
-            <section class="project-img">
-              <a href="{{imgLink}}"><img src="{{img}}" alt=""></a>
-            </section>
-            <section class="project-body">
-            {{{body}}}
-            </section>
-            <div class="byline">
-              By <address><a href="{{authorUrl}}">Author Name</a></address> published
-              <time pubdate datetime="{publishedOn}">Publish Time</time>
-            </div>
-          </header>
+    <header>
+      <h3>{{Title}}</h3>
+      <section class="project-img">
+        <a href="{{authorUrl}}"><img src="{{img}}" alt=""></a>
+      </section>
+      <section class="project-body">
+      {{{body}}}
+      </section>
+      <div class="byline">
+        By <address><a href="{{authorUrl}}">{{author}}</a></address>
+      </div>
+    </header>
   </script>
 
 </head>
@@ -45,9 +44,11 @@
     <header><h2>About Me</h2></header>
     <section>
       <img src="BenNolanProfile.jpg" alt="ProfilePic">
-      <p>
-        Hello, my name is Benjamin Nolan. I have a passion for all things art but focus on web development. I am a full stack Javascript Developer but I mainly focus on responsive Html, CSS, Javascript, jQuery.
-      </p>
+      <div>
+        <p>
+          Hello, my name is Benjamin Nolan. I have a passion for all things art but focus on web development. I am a full stack Javascript Developer but I mainly focus on responsive Html, CSS, Javascript, jQuery.
+        </p>
+      </div>
     </section>
   </section>
 
