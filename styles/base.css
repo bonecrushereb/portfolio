@@ -15,7 +15,6 @@ hr {
 }
 
 .tab-content {
-
   margin-top: 100px;
   text-align: center;
 }
@@ -24,6 +23,15 @@ hr {
 =======================================*/
 p {
   font-size: 1em;
+}
+
+div p {
+  text-align: center;
+  display: block;
+  width: 75%;
+  position: relative;
+  left: 16%;
+  margin-top: 25px;
 }
 
 address {
@@ -35,6 +43,8 @@ address {
 
 a, a:link, a:active {
   color: ##0D0D0D;
+  text-decoration: none;
+  }
 }
 
 a:hover, a:focus {

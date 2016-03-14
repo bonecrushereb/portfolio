@@ -47,6 +47,7 @@
 .about-container {
   width: 100%;
 }
+
 .about img{
   margin-bottom: 0;
   width: 50%;
@@ -55,31 +56,15 @@
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
 }
 
-div {
+section div {
   width: 100%;
+  margin-bottom: 100px;
 }
-div p {
-  display: block;
-  width: 50%;
-  position: relative;
-  left: 25%;
-  margin-top: 25px;
-}
-
-a:link{
-  text-decoration: none;
-}
-
-.template {
-  display: none;
-}
-
 
 .byline a {
   font-weight: bold;
   text-decoration: none;
 }
-
 
 .project-img img {
   width: 100%;
@@ -88,10 +73,13 @@ a:link{
 .project-img img:hover {
   width: 75%;
 }
+
 .main-footer {
   position: absolute;
+  margin-top: 100%;
+  outline: dotted 1px red;
   bottom: 0;
-  background: #f0f0f0;
+  background: #B27B3D;
   width: 100%;
 }
 
