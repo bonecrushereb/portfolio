@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+}
+
+.container {
+  min-height: 100%;
+  margin-bottom: -40px;
+}
 
 .main-header {
   position: relative;
@@ -58,7 +66,7 @@
 
 section div {
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 .byline a {
@@ -74,14 +82,15 @@ section div {
   width: 75%;
 }
 
-.main-footer {
-  position: absolute;
-  margin-top: 100%;
-  outline: dotted 1px red;
-  bottom: 0;
-  background: #B27B3D;
-  width: 100%;
+.main-footer, .push {
+      height: 40px;
 }
+
+.main-footer {
+    background: #B27B3D;
+    width: 100%;
+    outline: dotted 1px red;
+  }
 
 .main-footer ul {
   text-align: center;
