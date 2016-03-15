@@ -10,7 +10,7 @@ portfolioView.handleMainNav = function() {
 
   });
 
-  $('.main-nav .tab:first').click();    
+  $('.main-nav .tab:first').click();
 };
 
 $(document).ready(function(){

@@ -29,6 +29,7 @@
 </head>
 
 <body>
+  <div class="container">
   <header class="main-header">
     <h1>Benjamin Nolan</h1>
     <img src="hamburger-menu.png" alt="hamburger-menu" class="icon-menu"/>
@@ -45,9 +46,7 @@
     <section>
       <img src="BenNolanProfile.jpg" alt="ProfilePic">
       <div>
-        <p>
-          Hello, my name is Benjamin Nolan. I have a passion for all things art but focus on web development. I am a full stack Javascript Developer but I mainly focus on responsive Html, CSS, Javascript, jQuery.
-        </p>
+        <p> Hello, I am Ben Nolan. I am just starting out in Web Design and Development. Don't let that scare you though,I have been working on my abilities for over a year, and have just completed (July 2016) Code Fellows Full Stack JavaScript Coding. Web Design and Development is a perfect fit for me. I love the art aspect of design, but also enjoy solving puzzles. We all know fitting coding pieces together can be quite challenging. My biggest desire is to bring the visual joy i enjoy with good artwork and site performance to others. When Sony Online Entertainment became Daybreak studios,they consolidated their art production. I was one of the people laid off during that consolidateion, but my manager there remains one of my biggest supporters and references. Despite  they layoff, my experience at Sony is invaluable. There I learned how to work with QA, meet production deadlines and to be an "extra pair of hands" for the entire team.  No job was too small for me. While my wife finished her college degree and we completed our move to the Seattle area, I began my journey with Web Art and Developement. To date my journey has taught me patience, self-reliance and how much I enjoy learning new techniques and new ideas.  On my own I learned basic HTML, CSS and Javascript. Code Fellows completes this training. I find my tenacity, sense of humor, loyalty and love of learning have been more than helpful on the journey.  I look forward to the next chapter.</p>
       </div>
     </section>
   </section>
@@ -63,11 +62,11 @@
   <section id="skills" class="tab-content">
     <header>Skills</header>
     <section>
-      <p>
-        graph goes here
-      </p>
+      <canvas id="skillsChart" width="400" height="400"></canvas>
     </section>
   </section>
+<div class="push"></div>
+</div>
   <footer class="main-footer">
     <ul>
       <li>
@@ -86,6 +85,7 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+  <script src="scripts/chart.min.js"></script>
   <script src="scripts/projectData.js"></script>
   <script src="scripts/app.js"></script>
   <script src="scripts/PortfolioView.js"></script>

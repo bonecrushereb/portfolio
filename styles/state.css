@@ -1,4 +1,23 @@
 @media only screen and (min-width: 600px){
+
+ *{
+   margin: 0px;
+ }
+
+.container {
+  min-height: 100%;
+  margin-bottom: -40px;
+}
+  .main-header {
+    flex-wrap: nowrap;
+  }
+
+  .main-header h1{
+    display: absolute;
+    margin: 0;
+    padding-top: 20px;
+    width: 100px;
+  }
   .about img{
     margin-bottom: 0;
     width: 25%;
@@ -11,9 +30,10 @@
   }
 
   .main-nav {
-    position: absolute;
+    position: relative;
+    text-align: center;
     width: 100%;
-    margin-top: 21px;
+    margin: 20px;
     padding: 0;
     list-style: none;
   }
@@ -25,24 +45,26 @@
   }
 
   .main-nav li {
-    width: 100%;
+    width: 150px;
     display: inline;
-    padding: 20px;
+    padding: 0;
     margin-right: .4em;
     font-size: 1.5em;
     padding: .5em .2em;
     list-style-type: none;
     height: 40px;
+    outline: dotted 1px red;
   }
 
   div {
+    outline: dotted 1px red;
     width: 100%;
   }
   div p {
     display: block;
-    width: 25%;
+    width: 75%;
     position: relative;
-    left: 37.5%;
+    left: 15%;
     margin-top: 25px;
   }
 
@@ -56,17 +78,18 @@
     height: 25%;
   }
 
+  .main-footer, .push {
+      height: 40px;
+}
   .main-footer {
-    position: absolute;
-    bottom: 0;
-    background: #f0f0f0;
+    background: #B27B3D;
     width: 100%;
   }
 
   .main-footer ul {
     text-align: center;
     padding: 0px;
-    margin: 0px;
+    margin: 10px;
   }
   .main-footer li {
     display: inline;

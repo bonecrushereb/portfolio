@@ -1,6 +1,13 @@
+*{
+  margin: 0;
+}
 
+html {
+  height: 100%;
+}
 
 body {
+  height: 100%;
   display: block;
   line-height: 1.5;
   font-size: 100%;
@@ -15,8 +22,7 @@ hr {
 }
 
 .tab-content {
-
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -24,6 +30,15 @@ hr {
 =======================================*/
 p {
   font-size: 1em;
+}
+
+div p {
+  text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin-left: 10px;
+  margin-top: 25px;
 }
 
 address {
@@ -35,6 +50,8 @@ address {
 
 a, a:link, a:active {
   color: ##0D0D0D;
+  text-decoration: none;
+  }
 }
 
 a:hover, a:focus {
