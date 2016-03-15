@@ -19,5 +19,5 @@ portfolioView.initIndexPage = function() {
     $('#projects').append(a.toHtml());
   });
 
-  articleView.handleMainNav();
+  portfolioView.handleMainNav();
 };

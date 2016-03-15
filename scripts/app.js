@@ -33,14 +33,14 @@ Projects.fetchAll = function() {
   if (localStorage.rawData) {
 
     Projects.loadAll(localStorage.rawData);
-    portfolioView.initIndexPage();
+    PortfolioView.initIndexPage();
   } else {
 
     $.getJSON('/data/projectData.json', function(rawData){
       Projects.loadAll(rawData);
       localStorage.setItem('rawData', JSON.stringify(rawData));
       console.log('rawData is set');
-      portfolioView.initIndexPage();
+      PortfolioView.initIndexPage();
     });
   }
 };
