@@ -1,5 +1,3 @@
-var projects = [];
-
 function Projects (opts) {
   this.author = opts.author;
   this.authorUrl = opts.authorUrl;
@@ -8,6 +6,8 @@ function Projects (opts) {
   this.publishedOn = opts.publishedOn;
   this.img = opts.img;
 }
+
+Projects.all = [];
 
 Projects.prototype.toHtml = function() {
 
@@ -19,13 +19,31 @@ Projects.prototype.toHtml = function() {
   return template(this);
 };
 
-projectData.forEach(function(ele) {
-  projects.push(new Projects(ele));
-});
+Projects.loadAll = function(rawData) {
+  rawData.sort(function(a,b) {
+    return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
+  });
 
-projects.forEach(function(a){
-  $('#project').append(a.toHtml());
-});
+  rawData.forEach(function(ele) {
+    Projects.all.push(new Projects(ele));
+  });
+};
+
+Projects.fetchAll = function() {
+  if (localStorage.rawData) {
+
+    Projects.loadAll(localStorage.rawData);
+    PortfolioView.initIndexPage();
+  } else {
+
+    $.getJSON('/data/projectData.json', function(rawData){
+      Projects.loadAll(rawData);
+      localStorage.setItem('rawData', JSON.stringify(rawData));
+      console.log('rawData is set');
+      PortfolioView.initIndexPage();
+    });
+  }
+};
 
 //Creating Skills chart
 
