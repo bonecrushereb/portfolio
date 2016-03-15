@@ -53,11 +53,9 @@
     padding: .5em .2em;
     list-style-type: none;
     height: 40px;
-    outline: dotted 1px red;
   }
 
   div {
-    outline: dotted 1px red;
     width: 100%;
   }
   div p {

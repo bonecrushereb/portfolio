@@ -16,7 +16,7 @@ portfolioView.handleMainNav = function() {
 
 portfolioView.initIndexPage = function() {
   Projects.all.forEach(function(a){
-    $('#projects').append(a.toHtml());
+    $('#project').append(a.toHtml());
   });
 
   portfolioView.handleMainNav();
