@@ -30,17 +30,21 @@ Projects.loadAll = function(rawData) {
 };
 
 Projects.fetchAll = function() {
+  console.log('fetchAll does fire!');
   if (localStorage.rawData) {
-
+console.log('localStorage');
     Projects.loadAll(localStorage.rawData);
-    PortfolioView.initIndexPage();
+    portfolioView.initIndexPage();
   } else {
-
-    $.getJSON('/data/projectData.json', function(rawData){
+console.log('json');
+    $.getJSON('data/projectData.json', function(rawData){
+      console.log('json retreval');
       Projects.loadAll(rawData);
       localStorage.setItem('rawData', JSON.stringify(rawData));
       console.log('rawData is set');
-      PortfolioView.initIndexPage();
+      portfolioView.initIndexPage();
+    }).error(function (err){
+      console.log(err);
     });
   }
 };
