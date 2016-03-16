@@ -33,7 +33,7 @@ Projects.fetchAll = function() {
   console.log('fetchAll does fire!');
   if (localStorage.rawData) {
 console.log('localStorage');
-    Projects.loadAll(localStorage.rawData);
+    Projects.loadAll(JSON.parse(localStorage.rawData));
     portfolioView.initIndexPage();
   } else {
 console.log('json');
