@@ -66,6 +66,14 @@
     margin-top: 25px;
   }
 
+.project-body{
+  width: 100%;
+  margin-left: 300px;
+}
+
+.project-body {
+  width: 55%;
+}
   .project-img img {
     width: 50%;
     height: 50%;
