@@ -55,7 +55,7 @@
   // function skillsChartGenerator(){
   //
   //   var ctx = document.getElementById("skillsChart").getContext("2d");
-  //   var myNewChart = new Chart(ctx).PolarArea(data);
+  //   var skillsChart = new Chart(ctx).PolarArea(data);
   //
   //   var data = [
   //     {
