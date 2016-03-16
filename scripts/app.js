@@ -1,5 +1,3 @@
-(function(module) {
-
 
   function Projects(opts) {
     this.author = opts.author;
@@ -95,6 +93,3 @@
   // }
   //
   // skillsChartGenerator();
-
-  module.Projects = Projects;
-})(window);
