@@ -56,7 +56,7 @@
     // var ctx = document.getElementById("skillsChart").getContext("2d");
     // var skillsChart = new Chart(ctx).PolarArea(data);
     var ctx = $('#skillsChart').get(0).getContext("2d");
-    var myNewChart = new Chart(ctx).PolarArea(data);
+    var myNewChart = new Chart(ctx).PolarArea();
 
     var data = [
       {
