@@ -32,11 +32,11 @@ Projects.loadAll = function(rawData) {
 Projects.fetchAll = function() {
   console.log('fetchAll does fire!');
   if (localStorage.rawData) {
-console.log('localStorage');
+    console.log('localStorage');
     Projects.loadAll(JSON.parse(localStorage.rawData));
     portfolioView.initIndexPage();
   } else {
-console.log('json');
+    console.log('json');
     $.getJSON('data/projectData.json', function(rawData){
       console.log('json retreval');
       Projects.loadAll(rawData);
@@ -50,9 +50,12 @@ console.log('json');
 };
 
 // ::::  refactor into appropriate method  ::::: //
-$('.icon-menu, .tab a').on('click', function() {
-  $('.main-nav ul').toggle();
-});
+function hamburgerClickEvent(){
+  $('.icon-menu, .tab a').on('click', function() {
+    $('.main-nav ul').toggle();
+  });
+}
+hamburgerClickEvent();
 // :::::::::::::::::::::::::::::::::::::::::::: //
 
 //Creating Skills chart
