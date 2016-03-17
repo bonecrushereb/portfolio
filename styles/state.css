@@ -1,4 +1,23 @@
 @media only screen and (min-width: 600px){
+
+ *{
+   margin: 0px;
+ }
+
+.container {
+  min-height: 100%;
+  margin-bottom: -40px;
+}
+  .main-header {
+    flex-wrap: nowrap;
+  }
+
+  .main-header h1{
+    display: absolute;
+    margin: 0;
+    padding-top: 20px;
+    width: 100px;
+  }
   .about img{
     margin-bottom: 0;
     width: 25%;
@@ -11,9 +30,10 @@
   }
 
   .main-nav {
-    position: absolute;
+    position: relative;
+    text-align: center;
     width: 100%;
-    margin-top: 21px;
+    margin: 20px;
     padding: 0;
     list-style: none;
   }
@@ -25,11 +45,63 @@
   }
 
   .main-nav li {
+    width: 150px;
+    display: inline;
+    padding: 0;
+    margin-right: .4em;
+    font-size: 1.5em;
+    padding: .5em .2em;
+    list-style-type: none;
+    height: 40px;
+  }
+
+  div {
     width: 100%;
+  }
+  div p {
+    display: block;
+    width: 75%;
+    position: relative;
+    left: 15%;
+    margin-top: 25px;
+  }
+
+.project-body{
+  width: 100%;
+  margin-left: 300px;
+}
+
+.project-body {
+  width: 55%;
+}
+  .project-img img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .project-img img:hover {
+    width: 25%;
+    height: 25%;
+  }
+
+  .main-footer, .push {
+      height: 40px;
+}
+  .main-footer {
+    background: #B27B3D;
+    width: 100%;
+  }
+
+  .main-footer ul {
+    text-align: center;
+    padding: 0px;
+    margin: 10px;
+  }
+  .main-footer li {
     display: inline;
     padding: 20px;
     margin-right: .4em;
-    font-size: 1.5em;
+    font-size: 1em;
     padding: .5em .2em;
     list-style-type: none;
     height: 40px;

@@ -10,26 +10,27 @@
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/modules.css">
   <link rel="stylesheet" href="styles/state.css">
+  <link rel="stylesheet" href="Treehouse_badge_widget/reportcard-master/css/badges.css">
 
   <script id="project-template" type="text/x-handlebars-template">
-          <header>
-            <h3>{{Title}}</h3>
-            <section class="project-img">
-              <img src="{{img}}" alt="">
-            </section>
-            <section class="project-body">
-            {{{body}}}
-            </section>
-            <div class="byline">
-              By <address><a href="{{authorUrl}}">Author Name</a></address> published
-              <time pubdate datetime="{publishedOn}">Publish Time</time>
-            </div>
-          </header>
+    <header>
+      <h3>{{Title}}</h3>
+      <section class="project-img">
+        <a href="{{authorUrl}}"><img src="{{img}}" alt=""></a>
+      </section>
+      <section class="project-body">
+      {{{body}}}
+      </section>
+      <div class="byline">
+        By <address><a href="{{authorUrl}}">{{author}}</a></address>
+      </div>
+    </header>
   </script>
 
 </head>
 
 <body>
+  <div class="container">
   <header class="main-header">
     <h1>Benjamin Nolan</h1>
     <img src="hamburger-menu.png" alt="hamburger-menu" class="icon-menu"/>
@@ -45,9 +46,9 @@
     <header><h2>About Me</h2></header>
     <section>
       <img src="BenNolanProfile.jpg" alt="ProfilePic">
-      <p>
-        Hello, my name is Benjamin Nolan. I have a passion for all things art but focus on web development. I am a full stack Javascript Developer but I mainly focus on responsive Html, CSS, Javascript, jQuery.
-      </p>
+      <div>
+        <p> Hello, I am Ben Nolan. I am just starting out in Web Design and Development. Don't let that scare you though,I have been working on my abilities for over a year, and have just completed (July 2016) Code Fellows Full Stack JavaScript Coding. Web Design and Development is a perfect fit for me. I love the art aspect of design, but also enjoy solving puzzles. We all know fitting coding pieces together can be quite challenging. My biggest desire is to bring the visual joy i enjoy with good artwork and site performance to others. When Sony Online Entertainment became Daybreak studios,they consolidated their art production. I was one of the people laid off during that consolidateion, but my manager there remains one of my biggest supporters and references. Despite  they layoff, my experience at Sony is invaluable. There I learned how to work with QA, meet production deadlines and to be an "extra pair of hands" for the entire team.  No job was too small for me. While my wife finished her college degree and we completed our move to the Seattle area, I began my journey with Web Art and Developement. To date my journey has taught me patience, self-reliance and how much I enjoy learning new techniques and new ideas.  On my own I learned basic HTML, CSS and Javascript. Code Fellows completes this training. I find my tenacity, sense of humor, loyalty and love of learning have been more than helpful on the journey.  I look forward to the next chapter.</p>
+      </div>
     </section>
   </section>
 
@@ -55,30 +56,22 @@
     <header>
       <h2>Projects</h2></header>
     <section>
-      <article id="project-template" class="template template">
-        <!-- <header>
-          <h3>Title</h3>
-          <section class="project-img">
-            <img alt="">
-          </section>
-          <section class="project-body"></section>
-          <div class="byline">
-            By <address><a href="">Author Name</a></address> published
-            <time pubdate datetime="2000-01-01">Publish Time</time>
-          </div>
-        </header> -->
-      </article>
+      <article id="project-template" class="template template"></article>
     </section>
   </section>
 
   <section id="skills" class="tab-content">
     <header>Skills</header>
     <section>
-      <p>
-        graph goes here
-      </p>
+      <h3>Highly Experienced</h3>
+      <h3>Experience With</h3>
+      <h3>Addional Skills</h3>
+      <!-- Found widget https://github.com/rileyhilliard/reportcard-->
+      <div class="report-card treehouse"></div>
     </section>
   </section>
+<div class="push"></div>
+</div>
   <footer class="main-footer">
     <ul>
       <li>
@@ -97,9 +90,11 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-  <script src="scripts/projectData.js"></script>
+  <script src="Treehouse_badge_widget/js/reportcard/js/reportcard.js"></script>
   <script src="scripts/app.js"></script>
   <script src="scripts/PortfolioView.js"></script>
+  <script>
+    Projects.fetchAll();
+  </script>
 </body>
-
 </html>

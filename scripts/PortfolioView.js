@@ -10,9 +10,13 @@ portfolioView.handleMainNav = function() {
 
   });
 
-  $('.main-nav .tab:first').click();    
+  $('.main-nav .tab:first').click();
 };
 
-$(document).ready(function(){
+portfolioView.initIndexPage = function() {
+  Projects.all.forEach(function(a){
+    $('#project').append(a.toHtml());
+  });
+
   portfolioView.handleMainNav();
-});
+};
