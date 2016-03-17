@@ -49,6 +49,12 @@ console.log('json');
   }
 };
 
+// ::::  refactor into appropriate method  ::::: //
+$('.icon-menu, .tab a').on('click', function() {
+  $('.main-nav ul').toggle();
+});
+// :::::::::::::::::::::::::::::::::::::::::::: //
+
 //Creating Skills chart
 
 // function skillsChartGenerator(){
