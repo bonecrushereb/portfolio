@@ -13,7 +13,6 @@ portfolioView.handleMainNav = function() {
   $('.main-nav .tab:first').click();
 };
 
-
 portfolioView.initIndexPage = function() {
   Projects.all.forEach(function(a){
     $('#project').append(a.toHtml());
