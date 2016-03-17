@@ -25,7 +25,7 @@
   list-style: none;
 }
 .main-nav ul {
-  display:none;
+  display:block;
   width: 100%;
   padding: 0px;
   margin: 0px;
