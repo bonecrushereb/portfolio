@@ -48,7 +48,6 @@ Projects.loadAll = function(rawData) {
         $('.main-nav ul').toggle();
       });
     }
-
     hamburgerClickEvent();
   };
 };
