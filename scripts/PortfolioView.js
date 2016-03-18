@@ -17,13 +17,10 @@
   };
 
   portfolioView.hamburgerClickEvent = function(){
-    if($('.icon-menu').hasClass('display: none')){
-
       $('.icon-menu, .tab a').on('click', function() {
         $('.main-nav ul').toggle();
         console.log('I am functioning');
       });
-    };
   };
 
 
