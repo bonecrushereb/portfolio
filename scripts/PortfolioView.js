@@ -13,10 +13,19 @@ portfolioView.handleMainNav = function() {
   $('.main-nav .tab:first').click();
 };
 
+portfolioView.hamburgerClickEvent = function(){
+  $('.icon-menu, .tab a').on('click', function() {
+    $('.main-nav ul').toggle();
+  });
+};
+
+// hamburgerClickEvent();
+
 portfolioView.initIndexPage = function() {
   Projects.all.forEach(function(a){
     $('#project').append(a.toHtml());
   });
 
   portfolioView.handleMainNav();
+  portfolioView.hamburgerClickEvent();
 };
