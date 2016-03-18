@@ -6,6 +6,7 @@ portfolioView.handleMainNav = function() {
     var $val = $(this).attr('data-content');
     console.log($val);
     $('.tab-content').hide();
+    $('main-nav').show();
     $('.tab-content[id = "'+ $val +'"]').fadeIn();
 
   });
@@ -14,9 +15,13 @@ portfolioView.handleMainNav = function() {
 };
 
 portfolioView.hamburgerClickEvent = function(){
-  $('.icon-menu, .tab a').on('click', function() {
-    $('.main-nav ul').toggle();
-  });
+  if($('.icon-menu').hasClass('display: none')){
+
+    $('.icon-menu, .tab a').on('click', function() {
+      $('.main-nav ul').toggle();
+      console.log('I am functioning');
+    });
+  };
 };
 
 // hamburgerClickEvent();
