@@ -31,9 +31,9 @@
   margin: 0px;
 }
 
-/*.icon-menu:hover + .main-nav ul {
+.icon-menu:hover + .main-nav ul {
   display: block;
-}*/
+}
 
 .main-nav li {
   display: block;
