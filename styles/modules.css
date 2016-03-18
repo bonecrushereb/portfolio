@@ -79,7 +79,7 @@ section div {
 }
 
 .project-img img:hover {
-  width: 75%;
+  cursor: hand;
 }
 
 .main-footer, .push {

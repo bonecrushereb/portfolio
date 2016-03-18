@@ -81,8 +81,7 @@
   }
 
   .project-img img:hover {
-    width: 25%;
-    height: 25%;
+    cursor: hand;
   }
 
   .main-footer, .push {
