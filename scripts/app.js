@@ -1,5 +1,5 @@
 (function(module) {
-  
+
   function Projects (opts) {
     this.author = opts.author;
     this.authorUrl = opts.authorUrl;
