@@ -82,6 +82,11 @@ section div {
   cursor: hand;
 }
 
+.hiEx_badges li img {
+  width: 125px;
+  height: 125px;
+}
+
 .main-footer, .push {
       height: 40px;
 }
