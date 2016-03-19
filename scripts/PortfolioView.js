@@ -8,11 +8,19 @@
       var $val = $(this).attr('data-content');
       console.log($val);
       $('.tab-content').hide();
+      $('main-nav').show();
       $('.tab-content[id = "' + $val + '"]').fadeIn();
 
     });
 
     $('.main-nav .tab:first').click();
+  };
+
+  portfolioView.hamburgerClickEvent = function() {
+    $('.icon-menu').on('click', function() {
+      $('.main-nav ul').toggle();
+      console.log('I am functioning');
+    });
   };
 
 
@@ -22,6 +30,7 @@
     });
 
     portfolioView.handleMainNav();
+    portfolioView.hamburgerClickEvent();
   };
 
   module.portfolioView = portfolioView;

@@ -1,5 +1,6 @@
+(function(module) {
 
-  function Projects(opts) {
+  function Projects (opts) {
     this.author = opts.author;
     this.authorUrl = opts.authorUrl;
     this.title = opts.title;
@@ -14,14 +15,14 @@
 
     var template = Handlebars.compile($('#project-template').html());
 
-    this.daysAgo = parseInt((new Date() - new Date(this.publishedOn)) / 60 / 60 / 24 / 1000);
+    this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
     this.publishedOn = this.publishedOn ? 'published' + this.daysAgo + 'days agao' : '(draft)';
 
     return template(this);
   };
 
   Projects.loadAll = function(rawData) {
-    rawData.sort(function(a, b) {
+    rawData.sort(function(a,b) {
       return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
     });
 
@@ -38,16 +39,17 @@
       portfolioView.initIndexPage();
     } else {
       console.log('json');
-      $.getJSON('data/projectData.json', function(rawData) {
+      $.getJSON('data/projectData.json', function(rawData){
         console.log('json retreval');
         Projects.loadAll(rawData);
         localStorage.setItem('rawData', JSON.stringify(rawData));
         console.log('rawData is set');
         portfolioView.initIndexPage();
-      }).error(function(err) {
+      }).error(function (err){
         console.log(err);
       });
     }
   };
 
-  //Creating Skills chart
+  module.Projects = Projects;
+})(window);
