@@ -1,11 +1,8 @@
 [
   {
-    "title":       "Game Art Portfolio",
-    "author":      "Ben Nolan",
-    "authorUrl":   "http://www.http://benjaminnolan.com/",
-    "publishedOn": "2013-09-05",
+    "title":       "HTML",
     "body":        "<p>This was built while teaching myself code. It is also being used as my game art portfolio.</p>",
-    "img":         "images/GameArtWebSite.jpg"
+    "img":         "images/HTML_Badge.png"
   },
   {
     "title":       "Skydiving Experience",
