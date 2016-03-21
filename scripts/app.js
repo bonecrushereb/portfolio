@@ -1,55 +1,54 @@
-(function(module) {
+// (function(module) {
 
   function Projects (opts) {
-    this.author = opts.author;
-    this.authorUrl = opts.authorUrl;
-    this.title = opts.title;
-    this.body = opts.body;
-    this.publishedOn = opts.publishedOn;
-    this.img = opts.img;
+    Object.keys(opts).forEach(function(property, keys) {
+      this[property] = opts[property];
+    }, this);
+    console.log(this[property]);
   }
 
-  Projects.all = [];
+  Projects.projectArr = [];
+  Projects.badgesArr = [];
 
   Projects.prototype.toHtml = function() {
 
     var template = Handlebars.compile($('#project-template').html());
 
-    this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
-    this.publishedOn = this.publishedOn ? 'published' + this.daysAgo + 'days agao' : '(draft)';
-
     return template(this);
   };
 
-  Projects.loadAll = function(rawData) {
-    rawData.sort(function(a,b) {
-      return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
-    });
 
-    rawData.forEach(function(ele) {
-      Projects.all.push(new Projects(ele));
-    });
+  function fetchContent(localStorageId, jsonPath, loadContent) {
+    console.log('fetchContent is firing');
+    return function(callback) {
+      if (localStorage[localStorageId]) {
+        loadContent(JSON.parse(localStorage[localStorageId]));
+        callback();
+      } else {
+        $.getJSON(jsonPath, function(data){
+          console.log(data);
+          loadContent(data);
+          localStorage[localStorageId] = JSON.stringify(data);
+          callback();
+        });
+      };
+    };
   };
 
-  Projects.fetchAll = function() {
-    console.log('fetchAll does fire!');
-    if (localStorage.rawData) {
-      console.log('localStorage');
-      Projects.loadAll(JSON.parse(localStorage.rawData));
-      portfolioView.initIndexPage();
-    } else {
-      console.log('json');
-      $.getJSON('data/projectData.json', function(rawData){
-        console.log('json retreval');
-        Projects.loadAll(rawData);
-        localStorage.setItem('rawData', JSON.stringify(rawData));
-        console.log('rawData is set');
-        portfolioView.initIndexPage();
-      }).error(function (err){
-        console.log(err);
+
+  function GenerateloadContent(arr) {
+    return function(data) {
+      Projects[arr] = data.map(function(ele) {
+        return new Projects(ele);
       });
-    }
+    };
   };
 
-  module.Projects = Projects;
-})(window);
+  Projects.loadProjects = GenerateloadContent('projectArr');
+  Projects.loadBadges = GenerateloadContent('badgesArr');
+
+  Projects.fetchProjects = fetchContent('projectsData', '/data/projectData.json', Projects.loadProjects);
+  Projects.fetchBadges = fetchContent('badgeData', '/data/badgesData.json', Projects.loadBadges);
+
+//   module.Projects = Projects;
+// })(window);
