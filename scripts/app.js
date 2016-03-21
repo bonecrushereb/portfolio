@@ -1,4 +1,4 @@
-// (function(module) {
+(function(module) {
 
   function Projects (opts) {
     Object.keys(opts).forEach(function(property, keys) {
@@ -20,23 +20,21 @@
 
   function fetchContent(localStorageId, jsonPath, loadContent) {
     console.log('fetchContent is firing');
-    return function(callback) {
+    return function() {
       if (localStorage[localStorageId]) {
-        loadContent(JSON.parse(localStorage[localStorageId]));
-        callback();
+        generateLoadContent(JSON.parse(localStorage[localStorageId]));
       } else {
         $.getJSON(jsonPath, function(data){
-          console.log(data);
-          loadContent(data);
-          localStorage[localStorageId] = JSON.stringify(data);
-          callback();
+          console.log('the data for both json files is ', data);
+          localStorage.setItem(localStorageId , JSON.stringify(data));
+          console.log(localStorage.localStorageId);
         });
       };
     };
   };
 
 
-  function GenerateloadContent(arr) {
+  function generateLoadContent(arr) {
     return function(data) {
       Projects[arr] = data.map(function(ele) {
         return new Projects(ele);
@@ -44,11 +42,11 @@
     };
   };
 
-  Projects.loadProjects = GenerateloadContent('projectArr');
-  Projects.loadBadges = GenerateloadContent('badgesArr');
+  Projects.loadProjects = generateLoadContent('projectArr');
+  Projects.loadBadges = generateLoadContent('badgesArr');
 
   Projects.fetchProjects = fetchContent('projectsData', '/data/projectData.json', Projects.loadProjects);
   Projects.fetchBadges = fetchContent('badgeData', '/data/badgesData.json', Projects.loadBadges);
 
-//   module.Projects = Projects;
-// })(window);
+  module.Projects = Projects;
+})(window);
