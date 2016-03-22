@@ -1,23 +1,32 @@
 [
   {
     "title":       "HTML",
-    "body":        "<p>This was built while teaching myself code. It is also being used as my game art portfolio.</p>",
+    "body":        "images/html_code.png",
     "img":         "images/HTML_Badge.png"
   },
   {
-    "title":       "Skydiving Experience",
-    "author":      "Ben Nolan",
-    "authorUrl":   "http://skydivingexperience.comuv.com/",
-    "publishedOn": "2014-11-04",
-    "body":        "<p>This site was developed as a final project at Mira Mar community college</p>",
-    "img":         "images/SkydivingExperience.jpg"
+    "title":       "CSS",
+    "body":        "images/css_code.png",
+    "img":         "images/css_badge.png"
   },
   {
-    "title":       "United By DNA Mockup",
-    "author":      "Ben Nolan",
-    "authorUrl":   "https://www.unitedbydna.org/",
-    "publishedOn": "2014-02-13",
-    "body":        "<p>I volunteered for this organization. They wanted me to design a wireframe for them, however I went above and beyond and even helped them develope a mockup. However they have not implemented any changes into their site.</p>",
-    "img":         "images/unitedbydenamockup.jpg"
+    "title":       "javaScript",
+    "body":        "images/javasript_code.png",
+    "img":         "images/javascript_badge.jpg"
+  },
+  {
+    "title":       "jQuery",
+    "body":        "images/jQuery_code.png",
+    "img":         "images/jQuery_badge.png"
+  },
+  {
+    "title":       "PhP",
+    "body":        "images/php_code.png",
+    "img":         "images/php_badge.png"
+  },
+  {
+    "title":       "photoshop",
+    "body":        "images/junitedbydenamockup.jpg",
+    "img":         "images/photoshop_badge.png"
   }
 ]
