@@ -4,7 +4,7 @@
     Object.keys(opts).forEach(function(property, keys) {
       this[property] = opts[property];
     }, this);
-    console.log(this[property]);
+    // console.log(this[property]);
   }
 
   Projects.projectArr = [];
@@ -20,33 +20,35 @@
 
   function fetchContent(localStorageId, jsonPath, loadContent) {
     console.log('fetchContent is firing');
-    return function() {
+    return function(callback) {
       if (localStorage[localStorageId]) {
-        generateLoadContent(JSON.parse(localStorage[localStorageId]));
+        // console.log(localStorage[localStorageId]);
+        Projects.generateLoadContent(JSON.parse(localStorage[localStorageId]));
       } else {
         $.getJSON(jsonPath, function(data){
-          console.log('the data for both json files is ', data);
+          // console.log('the data for both json files is ', data);
           localStorage.setItem(localStorageId , JSON.stringify(data));
-          console.log(localStorage.localStorageId);
+          // console.log(localStorage.localStorageId);
         });
       };
+      callback();
     };
   };
 
 
-  function generateLoadContent(arr) {
-    return function(data) {
-      Projects[arr] = data.map(function(ele) {
-        return new Projects(ele);
-      });
-    };
+  Projects.generateLoadContent = function(data) {
+
+    Projects.projectArr = data.map(function(ele) {
+      return new Projects(ele);
+    });
+    console.log('slugs',Projects.projectArr);
+    console.log('this is an array', data);
+
   };
 
-  Projects.loadProjects = generateLoadContent('projectArr');
-  Projects.loadBadges = generateLoadContent('badgesArr');
 
-  Projects.fetchProjects = fetchContent('projectsData', '/data/projectData.json', Projects.loadProjects);
-  Projects.fetchBadges = fetchContent('badgeData', '/data/badgesData.json', Projects.loadBadges);
+  Projects.fetchProjects = fetchContent('projectsData', '/data/projectData.json');
+  Projects.fetchBadges = fetchContent('badgeData', '/data/badgesData.json');
 
   module.Projects = Projects;
 })(window);
