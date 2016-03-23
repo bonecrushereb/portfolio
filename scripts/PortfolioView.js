@@ -18,16 +18,14 @@
 
     });
 
-    portfolioView.handleMainNav();
     portfolioView.hamburgerClickEvent();
   };
 
   portfolioView.initBadges = function() {
     Projects.badgesArr.forEach(function(a) {
-      $('#skillS').append(a.toHtml('#skills-template'));
+      $('.skills-list').append(a.toHtml('#skills-template'));
     });
 
-    portfolioView.handleMainNav();
     portfolioView.hamburgerClickEvent();
   };
 
