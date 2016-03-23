@@ -19,7 +19,7 @@
 
   function fetchContent(localStorageId, jsonPath) {
     console.log('fetchContent is firing');
-    return function(callback) {
+    return function() {
       if (localStorage[localStorageId]) {
         console.log(localStorage[localStorageId]);
         Projects.generateLoadContent(JSON.parse(localStorage[localStorageId]));
@@ -30,7 +30,7 @@
           console.log(localStorage.localStorageId);
         });
       };
-      // callback();
+        // callback();
     };
   };
 
