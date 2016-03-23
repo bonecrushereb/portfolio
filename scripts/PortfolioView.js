@@ -27,8 +27,9 @@
   portfolioView.initProjects = function() {
     console.log('initProjects is firing', Projects.projectArr);
     Projects.projectArr.forEach(function(a) {
-      console.log('for each is firing');
-      $('#project').append(a.toHtml());
+
+      $('#project').append(a.toHtml($('#project-template')));
+
     });
 
     portfolioView.handleMainNav();
@@ -37,7 +38,7 @@
 
   portfolioView.initBadges = function() {
     Projects.badgesArr.forEach(function(a) {
-      $('#skill').append(a.toHtml());
+      $('#skillS').append(a.toHtml('#skills-template'));
     });
 
     portfolioView.handleMainNav();

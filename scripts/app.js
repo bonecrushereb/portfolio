@@ -10,10 +10,9 @@
   Projects.projectArr = [];
   Projects.badgesArr = [];
 
-  Projects.prototype.toHtml = function() {
+  Projects.prototype.toHtml = function(scriptID) {
 
-    var template = Handlebars.compile($('#project-template').html());
-
+    var template = Handlebars.compile($(scriptID).html());
     return template(this);
   };
 
@@ -41,6 +40,11 @@
     Projects.projectArr = data.map(function(ele) {
       return new Projects(ele);
     });
+
+    Projects.badgesArr = data.map(function(ele) {
+      return new Projects(ele);
+    });
+
     console.log('slugs',Projects.projectArr);
     console.log('this is an array', data);
 

@@ -14,7 +14,7 @@
 
   <script id="project-template" type="text/x-handlebars-template">
     <header>
-      <h3>{{Title}}</h3>
+      <h3>{{title}}</h3>
       <section class="project-img">
         <a href="{{authorUrl}}"><img src="{{img}}" alt=""></a>
       </section>
@@ -25,6 +25,15 @@
         By <address><a href="{{authorUrl}}">{{author}}</a></address>
       </div>
     </header>
+  </script>
+
+  <script id="skills-template" type="text/x-handlebars-template">
+    <article>
+      <h3>Highly Experienced</h3>
+      <ul>
+        <li>{{img}}</li>
+      </ul>
+    </article>
   </script>
 
 </head>
@@ -65,32 +74,11 @@
     <header>
       <h2>Skills</h2>
     </header>
-    <!-- <section class="skillsTab">
-      <h3>Highly Experienced</h3>
-        <ul class="hiEx_badges">
-          <li>
-            <img src="images/HTML_Badge.png">
-          </li>
-          <li>
-            <img src="images/photoshop_badge.png">
-          </li>
-        </ul>
-      <h3>Experience With</h3>
-      <ul class="Ex_badges">
-        <li>
-          <img src="images/Php_badge.png">
-        </li>
-        <li>
-          <img src="images/jQuery_badge.png">
-        </li>
-        <li>
-          <img src="images/css_badge.png">
-        </li>
-      </ul>
-      <h3>Addional Skills</h3>
-      Found widget https://github.com/rileyhilliard/reportcard
-      <div class="report-card treehouse"></div>
-    </section> -->
+    <section>
+      <article id="skills-template" class="template template"></article>
+    </section>
+  </section>
+
   </section>
 <div class="push"></div>
 </div>
