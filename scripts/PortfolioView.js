@@ -1,4 +1,4 @@
-// (function(module) {
+(function(module) {
 
   var portfolioView = {};
 
@@ -26,7 +26,7 @@
 
   portfolioView.initProjects = function() {
     Projects.projectArr.forEach(function(a) {
-      $('#project').append(a.toHtml());
+      $('#project').append(a.toHtml($('#project-template')));
     });
 
     portfolioView.handleMainNav();
@@ -35,12 +35,12 @@
 
   portfolioView.initBadges = function() {
     Projects.badgesArr.forEach(function(a) {
-      $('#skill').append(a.toHtml());
+      $('#skillS').append(a.toHtml('#skills-template'));
     });
 
     portfolioView.handleMainNav();
-    portfolioview.hamburgerClickEvent();
+    portfolioView.hamburgerClickEvent();
   };
 
-//   module.portfolioView = portfolioView;
-// })(window);
+  module.portfolioView = portfolioView;
+})(window);
