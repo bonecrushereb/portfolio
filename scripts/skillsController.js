@@ -1,7 +1,8 @@
 (function(module) {
   var skillsController = {};
 
-  // Projects.fetchContent (portfolioView.initSkills);
+  Projects.fetchBadges();
+  portfolioView.initBadges();
 
   skillsController.index = function() {
     $('.tab-content').hide();

@@ -23,7 +23,7 @@
 
   portfolioView.initBadges = function() {
     Projects.badgesArr.forEach(function(a) {
-      $('#skills').append(a.toHtml('#skills-template'));
+      $('.skills-list').append(a.toHtml('#skills-template'));
     });
 
     portfolioView.hamburgerClickEvent();

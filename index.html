@@ -28,12 +28,7 @@
   </script>
 
   <script id="skills-template" type="text/x-handlebars-template">
-    <article>
-      <h3>Highly Experienced</h3>
-      <ul>
-        <li>{{img}}</li>
-      </ul>
-    </article>
+        <li><img src="{{img}}" tag=""></li>
   </script>
 
 </head>
@@ -75,7 +70,10 @@
       <h2>Skills</h2>
     </header>
     <section>
-      <article id="skills-template" class="template template"></article>
+      <article>
+        <ul class="skills-list template">
+        </ul>
+      </article>
     </section>
   </section>
 
