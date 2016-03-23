@@ -17,20 +17,20 @@
   };
 
 
-  function fetchContent(localStorageId, jsonPath, loadContent) {
+  function fetchContent(localStorageId, jsonPath) {
     console.log('fetchContent is firing');
     return function(callback) {
       if (localStorage[localStorageId]) {
-        // console.log(localStorage[localStorageId]);
+        console.log(localStorage[localStorageId]);
         Projects.generateLoadContent(JSON.parse(localStorage[localStorageId]));
       } else {
         $.getJSON(jsonPath, function(data){
-          // console.log('the data for both json files is ', data);
+          console.log('the data for both json files is ', data);
           localStorage.setItem(localStorageId , JSON.stringify(data));
-          // console.log(localStorage.localStorageId);
+          console.log(localStorage.localStorageId);
         });
       };
-      callback();
+      // callback();
     };
   };
 
@@ -51,8 +51,8 @@
   };
 
 
-  Projects.fetchProjects = fetchContent('projectsData', '/data/projectData.json');
-  Projects.fetchBadges = fetchContent('badgeData', '/data/badgesData.json');
+  Projects.fetchProjects = fetchContent('projectsData', 'data/projectData.json');
+  Projects.fetchBadges = fetchContent('badgeData', '  data/badgesData.json');
 
   module.Projects = Projects;
 })(window);
