@@ -1,12 +1,12 @@
 (function(module) {
   var skillsController = {};
 
-  Projects.fetchConent (articleView.initSkills);
+  // Projects.fetchContent (portfolioView.initSkills);
 
   skillsController.index = function() {
     $('.tab-content').hide();
     $('#skills').fadeIn();
   };
 
-  module.skillssController = skillsController;
+  module.skillsController = skillsController;
 })(window);
