@@ -44,6 +44,7 @@
     Projects.badgesArr = data.map(function(ele) {
       return new Projects(ele);
     });
+
     console.log('slugs',Projects.projectArr);
     console.log('this is an array', data);
 
