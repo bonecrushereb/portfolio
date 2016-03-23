@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "web development portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bonecrushereb/portfolio.git"
+  },
+  "author": "Ben Nolan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bonecrushereb/portfolio/issues"
+  },
+  "homepage": "https://github.com/bonecrushereb/portfolio#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "express-request-proxy": "^2.0.0",
+    "node": "0.0.0"
+  }
+}

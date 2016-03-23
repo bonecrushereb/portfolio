@@ -1,7 +1,7 @@
 (function (module) {
   var projectContoller = {};
 
-  Projects.fetchContent(articleView.initProjects);
+  // Projects.fetchContent(portfolioView.initProjects);
 
   projectContoller.index = function() {
     $('.tab-content').hide();
