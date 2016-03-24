@@ -34,7 +34,6 @@
     });
 
     portfolioView.codeShow();
-    portfolioView.hamburgerClickEvent();
   };
 
   module.portfolioView = portfolioView;
