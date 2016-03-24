@@ -82,6 +82,10 @@ section div {
   list-style-type: none;
 }
 
+.skills-list {
+  width:100%;
+}
+
 .skills-list li:hover{
   display:block;
 }
