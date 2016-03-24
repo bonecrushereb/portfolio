@@ -33,7 +33,7 @@
       $('.skills-list').append(a.toHtml('#skills-template'));
     });
 
-    porfolioView.codeShow();
+    portfolioView.codeShow();
     portfolioView.hamburgerClickEvent();
   };
 
