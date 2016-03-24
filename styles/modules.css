@@ -83,7 +83,13 @@ section div {
 }
 
 .skills-list {
+  text-align: center;
   width:100%;
+}
+
+.skills-list span img {
+  margin: 0 auto;
+  width:75%;
 }
 
 .skills-list li:hover{
@@ -98,10 +104,6 @@ section div {
   cursor: hand;
 }
 
-.hiEx_badges li img {
-  width: 125px;
-  height: 125px;
-}
 
 .main-footer, .push {
       height: 40px;

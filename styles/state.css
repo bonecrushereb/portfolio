@@ -29,6 +29,11 @@
     display: none;
   }
 
+  .skills-list span img {
+    margin: 0 auto;
+    width:50%;
+  }
+
   .main-nav {
     display: block;
     position: relative;
