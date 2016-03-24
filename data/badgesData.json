@@ -11,7 +11,7 @@
   },
   {
     "title":       "javaScript",
-    "body":        "images/javasript_code.png",
+    "body":        "images/javascript_code.png",
     "img":         "images/javascript_badge.png"
   },
   {
@@ -26,7 +26,7 @@
   },
   {
     "title":       "photoshop",
-    "body":        "images/junitedbydenamockup.jpg",
+    "body":        "images/unitedbydenamockup.jpg",
     "img":         "images/photoshop_badge.png"
   }
 ]
