@@ -86,36 +86,27 @@ section div {
   width:100%;
 }
 
-.skills-list span img {
-  margin: 0 auto;
-  width:75%;
-}
-
 
 .skills-list li:hover{
   display:block;
 }
 
-.skills-list span {
+.showCode {
   display:none;
-}
-
-.showcode {
   width:100%;
 }
 
 li.badge {
-  /*position: relative;
-  right: 10px;*/
   margin: 0 auto;
-  width:100%;
 }
 
 .project-img img:hover {
   cursor: hand;
 }
 
-
+.showCode img {
+  width:100%;
+}
 .main-footer, .push {
       height: 40px;
 }

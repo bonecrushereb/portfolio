@@ -11,7 +11,7 @@
 
   portfolioView.codeShow = function(){
     $('.badge').on('click', function() {
-      $('.showCode').toggle();
+      $(this).find('.showCode').toggle();
       console.log('badges is functioning');
     });
   };
