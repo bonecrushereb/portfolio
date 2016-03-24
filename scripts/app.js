@@ -1,46 +1,58 @@
-var projects = [];
+(function(module) {
 
-function Projects (opts) {
-  this.author = opts.author;
-  this.authorUrl = opts.authorUrl;
-  this.title = opts.title;
-  this.body = opts.body;
-  this.publishedOn = opts.publishedOn;
-  this.img = opts.img;
-}
-
-Projects.prototype.toHtml = function() {
-  var $newProjects = $('#project .template').clone();
-  $newProjects.removeClass('template');
-  if (!this.publishedOn) {
-    $newProjects.addClass('draft');
+  function Projects (opts) {
+    Object.keys(opts).forEach(function(property, keys) {
+      this[property] = opts[property];
+    }, this);
+    // console.log(this[property]);
   }
-  // console.log('hello there');
 
-  $newProjects.find('h3:first').text(this.title);
-  $newProjects.find('.byline a').attr('data-author', this.author);
-  $newProjects.find('.byline a').html(this.author);
-  $newProjects.attr('data-authorUrl', this.authorUrl);
-  $newProjects.find('.project-body').html(this.body);
-  $newProjects.find('time[pubdate]').attr('datetime', this.publishedOn);
-  $newProjects.find('time[pubdate]').attr('title', this.publishedOn);
-  $newProjects.find('.project-img img').attr('src', this.img);
+  Projects.projectArr = [];
+  Projects.badgesArr = [];
 
-  $newProjects.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
+  Projects.prototype.toHtml = function(scriptID) {
 
-  $newProjects.append('<hr>');
-  // console.log($newProjects);
-  return $newProjects;
-};
+    var template = Handlebars.compile($(scriptID).html());
+    return template(this);
+  };
 
-projectData.sort(function(a,b) {
-  return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
-});
 
-projectData.forEach(function(ele) {
-  projects.push(new Projects(ele));
-});
+  function fetchContent(localStorageId, jsonPath) {
+    console.log('fetchContent is firing');
+    return function() {
+      if (localStorage[localStorageId]) {
+        console.log(localStorage[localStorageId]);
+        Projects.generateLoadContent(JSON.parse(localStorage[localStorageId]));
+      } else {
+        $.getJSON(jsonPath, function(data){
+          console.log('the data for both json files is ', data);
+          localStorage.setItem(localStorageId , JSON.stringify(data));
+          console.log(localStorage.localStorageId);
+        });
+      };
+        // callback();
+    };
+  };
 
-projects.forEach(function(a){
-  $('#project').append(a.toHtml());
-});
+
+  Projects.generateLoadContent = function(data) {
+
+    Projects.projectArr = data.map(function(ele) {
+      return new Projects(ele);
+    });
+
+    Projects.badgesArr = data.map(function(ele) {
+      return new Projects(ele);
+    });
+
+    console.log('slugs',Projects.projectArr);
+    console.log('this is an array', data);
+
+  };
+
+
+  Projects.fetchProjects = fetchContent('projectsData', 'data/projectData.json');
+  Projects.fetchBadges = fetchContent('badgeData', '  data/badgesData.json');
+
+  module.Projects = Projects;
+})(window);

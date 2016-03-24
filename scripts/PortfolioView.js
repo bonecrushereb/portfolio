@@ -1,18 +1,41 @@
-var portfolioView = {};
+(function(module) {
 
-portfolioView.handleMainNav = function() {
+  var portfolioView = {};
 
-  $('.main-nav').on('click', 'li' ,function(){
-    var $val = $(this).attr('data-content');
-    console.log($val);
-    $('.tab-content').hide();
-    $('.tab-content[id = "'+ $val +'"]').fadeIn();
+  portfolioView.hamburgerClickEvent = function() {
+    $('.icon-menu').on('click', function() {
+      $('.main-nav ul').toggle();
+      console.log('I am functioning');
+    });
+  };
 
-  });
+  portfolioView.codeShow = function(){
+    $('.badge').on('click', function() {
+      $('.showCode').toggle();
+      console.log('badges is functioning');
+    });
+  };
 
-  $('.main-nav .tab:first').click();    
-};
 
-$(document).ready(function(){
-  portfolioView.handleMainNav();
-});
+  portfolioView.initProjects = function() {
+    console.log('initProjects is firing', Projects.projectArr);
+    Projects.projectArr.forEach(function(a) {
+
+      $('#project').append(a.toHtml($('#project-template')));
+
+    });
+
+    portfolioView.hamburgerClickEvent();
+  };
+
+  portfolioView.initBadges = function() {
+    Projects.badgesArr.forEach(function(a) {
+      $('.skills-list').append(a.toHtml('#skills-template'));
+    });
+
+    porfolioView.codeShow();
+    portfolioView.hamburgerClickEvent();
+  };
+
+  module.portfolioView = portfolioView;
+})(window);
