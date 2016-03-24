@@ -37,7 +37,7 @@
 
 .main-nav li {
   display: block;
-  width: 100%;
+  width: 50%;
   padding: 20px;
   margin-right: .4em;
   font-size: 1.5em;
@@ -83,8 +83,8 @@ section div {
 }
 
 .skills-list {
-  text-align: center;
-  width:100%;
+  margin: 0 auto;
+  width:75%;
 }
 
 .skills-list span img {
@@ -92,12 +92,20 @@ section div {
   width:75%;
 }
 
+
 .skills-list li:hover{
   display:block;
 }
 
 .skills-list span {
   display:none;
+}
+
+li.badge {
+  position: relative;
+  right: 20px;
+  margin: 0 auto;
+  width:100%;
 }
 
 .project-img img:hover {
