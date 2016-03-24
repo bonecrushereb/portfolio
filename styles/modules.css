@@ -83,8 +83,10 @@ section div {
 }
 
 .skills-list {
+  position: relative;
+  right: 40px;
   margin: 0 auto;
-  width:75%;
+  width:100%;
 }
 
 .skills-list span img {
@@ -101,9 +103,13 @@ section div {
   display:none;
 }
 
+.showcode {
+  width:100%;
+}
+
 li.badge {
-  position: relative;
-  right: 20px;
+  /*position: relative;
+  right: 10px;*/
   margin: 0 auto;
   width:100%;
 }
