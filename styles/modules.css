@@ -82,6 +82,14 @@ section div {
   list-style-type: none;
 }
 
+.skills-list li:hover{
+  display:block;
+}
+
+.skills-list span {
+  display:none;
+}
+
 .project-img img:hover {
   cursor: hand;
 }

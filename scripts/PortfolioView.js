@@ -9,6 +9,13 @@
     });
   };
 
+  portfolioView.codeShow = function(){
+    $('.badge').on('click', function() {
+      $('.showCode').toggle();
+      console.log('badges is functioning');
+    });
+  };
+
 
   portfolioView.initProjects = function() {
     console.log('initProjects is firing', Projects.projectArr);
@@ -26,6 +33,7 @@
       $('.skills-list').append(a.toHtml('#skills-template'));
     });
 
+    porfolioView.codeShow();
     portfolioView.hamburgerClickEvent();
   };
 
