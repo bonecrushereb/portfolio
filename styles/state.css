@@ -29,12 +29,17 @@
     display: none;
   }
 
+  .skills-list span img {
+    margin: 0 auto;
+    width:50%;
+  }
+
   .main-nav {
     display: block;
     position: relative;
     text-align: center;
     width: 100%;
-    margin: 20px;
+    margin: 40px;
     padding: 0;
     list-style: none;
   }
