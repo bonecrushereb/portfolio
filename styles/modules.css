@@ -33,6 +33,7 @@
 
 
 .main-nav li {
+  font-family: 'Bangers', cursive !important;
   display: block;
   width: 50%;
   padding: 20px;
@@ -41,6 +42,10 @@
   padding: .5em .2em;
   list-style-type: none;
   height: 40px;
+}
+
+.main-nav li:before {
+  font-family: 'icomoon'
 }
 
 .icon-menu {
