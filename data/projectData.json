@@ -7,11 +7,11 @@
     "img":         "images/GameArtWebSite.jpg"
   },
   {
-    "title":       "Skydiving Experience",
+    "title":       "Ebb-tracker",
     "author":      "Ben Nolan",
-    "authorUrl":   "http://skydivingexperience.comuv.com/",
-    "body":        "<p>This site was developed as a final project at Mira Mar community college</p>",
-    "img":         "images/SkydivingExperience.jpg"
+    "authorUrl":   "http://ebb-tracker.herokuapp.com",
+    "body":        "<p>This site was developed with a group of five people during my time at code fellows in the 301 course</p>",
+    "img":         "images/ebb-tracker.png"
   },
   {
     "title":       "United By DNA Mockup",
