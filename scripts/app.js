@@ -8,7 +8,6 @@
   }
 
   Projects.projectArr = [];
-  Projects.badgesArr = [];
 
   Projects.prototype.toHtml = function(scriptID) {
 
@@ -52,7 +51,6 @@
 
 
   Projects.fetchProjects = fetchContent('projectsData', 'data/projectData.json');
-  Projects.fetchBadges = fetchContent('badgeData', '  data/badgesData.json');
 
   module.Projects = Projects;
 })(window);

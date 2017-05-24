@@ -31,19 +31,21 @@
   margin: 0px;
 }
 
-.icon-menu:hover + .main-nav ul {
-  display: block;
-}
 
 .main-nav li {
+  font-family: 'Bangers', cursive !important;
   display: block;
-  width: 100%;
+  width: 50%;
   padding: 20px;
   margin-right: .4em;
   font-size: 1.5em;
   padding: .5em .2em;
   list-style-type: none;
   height: 40px;
+}
+
+.main-nav li:before {
+  font-family: 'icomoon'
 }
 
 .icon-menu {
@@ -82,23 +84,34 @@ section div {
   list-style-type: none;
 }
 
+.skills-list {
+  position: relative;
+  right: 40px;
+  margin: 0 auto;
+  width:100%;
+}
+
+
 .skills-list li:hover{
   display:block;
 }
 
-.skills-list span {
+.showCode {
   display:none;
+  width:100%;
+}
+
+li.badge {
+  margin: 0 auto;
 }
 
 .project-img img:hover {
   cursor: hand;
 }
 
-.hiEx_badges li img {
-  width: 125px;
-  height: 125px;
+.showCode img {
+  width:100%;
 }
-
 .main-footer, .push {
       height: 40px;
 }
