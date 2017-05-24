@@ -28,10 +28,6 @@
     </header>
   </script>
 
-  <script id="skills-template" type="text/x-handlebars-template">
-        <li class="badge"><img src="{{img}}" tag=""><div class="showCode"><img src="{{body}}" tag=""></div></li>
-  </script>
-
 </head>
 
 <body>
@@ -41,18 +37,17 @@
     <img src="images/hamburger-menu.png" alt="hamburger-menu" class="icon-menu"/>
     <nav class="main-nav">
       <ul>
-        <li class="tab icon-book" data-content="about"><a href="/">About</a></li>
+        <li><a href="/">Home</a></li>
         <li class="tab icon-folder" data-content="project"><a href="/projects">Projects</a></li>
-        <li class="tab icon-stats-bars" data-content="skills"><a href="/skills">Skills</a></li>
+        <li data-content="about" data-content="about"><a href="/about">About</a></li>
       </ul>
     </nav>
   </header>
-  <section id="about" class="about tab-content">
-    <header><h2>About Me</h2></header>
+  <section id="home" class="home tab-content">
+    <header><h2>Benjamin E Nolan</h2></header>
     <section>
-      <img src="images/BenNolanProfile.jpg" alt="ProfilePic">
       <div>
-        <p> Hello, I am Ben Nolan. I am just starting out in Web Design and Development. Don't let that scare you though,I have been working on my abilities for over a year, and have just completed (July 2016) Code Fellows Full Stack JavaScript Coding. Web Design and Development is a perfect fit for me. I love the art aspect of design, but also enjoy solving puzzles. We all know fitting coding pieces together can be quite challenging. My biggest desire is to bring the visual joy i enjoy with good artwork and site performance to others. When Sony Online Entertainment became Daybreak studios,they consolidated their art production. I was one of the people laid off during that consolidateion, but my manager there remains one of my biggest supporters and references. Despite  they layoff, my experience at Sony is invaluable. There I learned how to work with QA, meet production deadlines and to be an "extra pair of hands" for the entire team.  No job was too small for me. While my wife finished her college degree and we completed our move to the Seattle area, I began my journey with Web Art and Developement. To date my journey has taught me patience, self-reliance and how much I enjoy learning new techniques and new ideas.  On my own I learned basic HTML, CSS and Javascript. Code Fellows completes this training. I find my tenacity, sense of humor, loyalty and love of learning have been more than helpful on the journey.  I look forward to the next chapter.</p>
+        <p>"Success is a journey, not a destination. The doing is often more important than the outcome." - Arthur Ashe</p>
       </div>
     </section>
   </section>
@@ -66,15 +61,12 @@
     </section>
   </section>
 
-  <section id="skills" class="tab-content">
-    <header>
-      <h2>Skills</h2>
-    </header>
+  <section id="about" class="about tab-content">
+    <header><h2>About me</h2></header>
     <section>
-      <article>
-        <ul class="skills-list template">
-        </ul>
-      </article>
+      <div>
+        <p>"Success is a journey, not a destination. The doing is often more important than the outcome." - Arthur Ashe</p>
+      </div>
     </section>
   </section>
 
@@ -104,9 +96,9 @@
   <!-- <script src="Treehouse_badge_widget/js/reportcard/js/reportcard.js"></script> -->
   <script src="scripts/app.js"></script>
   <script src="scripts/PortfolioView.js"></script>
+  <script src="scripts/homeController.js"></script>
   <script src="scripts/aboutController.js"></script>
   <script src="scripts/projectController.js"></script>
-  <script src="scripts/skillsController.js"></script>
   <script src="scripts/routes.js"></script>
 </body>
 </html>

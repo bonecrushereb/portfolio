@@ -1,5 +1,5 @@
-  page('/', aboutController.index);
+  page('/', homeController.index);
   page('/projects', projectContoller.index);
-  page('/skills', skillsController.index);
+  page('/about', aboutController.index)
 
   page();

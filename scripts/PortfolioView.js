@@ -9,12 +9,6 @@
     });
   };
 
-  portfolioView.codeShow = function(){
-    $('.badge').on('click', function() {
-      $(this).find('.showCode').toggle();
-      console.log('badges is functioning');
-    });
-  };
 
 
   portfolioView.initProjects = function() {
@@ -26,14 +20,6 @@
     });
 
     portfolioView.hamburgerClickEvent();
-  };
-
-  portfolioView.initBadges = function() {
-    Projects.badgesArr.forEach(function(a) {
-      $('.skills-list').append(a.toHtml('#skills-template'));
-    });
-
-    portfolioView.codeShow();
   };
 
   module.portfolioView = portfolioView;
