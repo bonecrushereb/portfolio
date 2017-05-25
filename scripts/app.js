@@ -17,14 +17,11 @@
 
 
   function fetchContent(localStorageId, jsonPath) {
-    console.log('fetchContent is firing');
     return function() {
       if (localStorage[localStorageId]) {
-        console.log(localStorage[localStorageId]);
         Projects.generateLoadContent(JSON.parse(localStorage[localStorageId]));
       } else {
         $.getJSON(jsonPath, function(data){
-          console.log('the data for both json files is ', data);
           localStorage.setItem(localStorageId , JSON.stringify(data));
           console.log(localStorage.localStorageId);
         });
