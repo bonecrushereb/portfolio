@@ -17,12 +17,25 @@
     <header>
       <h3>{{title}}</h3>
       <section class="project-img">
-        <a href="{{authorUrl}}"><img src="{{img}}" alt=""></a>
-      </section>
-      <section class="project-body">
-      {{{body}}}
+        <a href="{{projectUrl}}"><img src="{{img}}" alt=""></a>
       </section>
     </header>
+  </script>
+
+  <script id="indproject-template" type="text/x-handlebars-template">
+    {{#if name}}
+    <img src="{{projectUrl}}" alt="{{title}}"> {{#each indproject}}
+      <section>
+        <h2>{{name}}</h2>
+        <p>{{appdesc}}</p>
+        <h3>Technology Used</h3>
+        <ul>{{techused}}</ul>
+        <h3>Time Frame</h3>
+        <p>{{timeframe}}</p>
+        <h3>Development Problems</h3>
+        <p>{{problems}}</p>
+      </section>
+    {{/if}}
   </script>
 
 </head>
@@ -116,6 +129,7 @@
         </ul>
       </div>
     </section>
+    {{{body}}}
   </section>
 
   </section>

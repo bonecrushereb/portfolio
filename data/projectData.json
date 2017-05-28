@@ -3,30 +3,32 @@
     "title":            "responsibuyer",
     "appdesc":          "App to increase awareness of illegal or harmful products found overseas while on vacation, by providing examples of products that have a negative impact on wildlife.",
     "background":       "The Zoohackathon is sponsored by zoos around the world, this hackathons goal is to use technology to reduce demand for trafficked wildlife products. Responsibuyer addresses the issue of travelers who are unaware of products sold in a variety of countries that are made from trafficked wildlife.",
-    "techused":         ["Javascript","Python", "css"],
+    "techused":         "Javascript , Python, css",
     "timeframe":        "2 days",
     "problems":         "No public API existed for the App data. An embedded data source was created which included data from Wikipedia, Google Maps, IUCN Redlist API, Wildlife trade tracker",
     "contributions":    "Autocomplete functionality based on Google Map data. Style sheets. Newsfeed information into Json file including testing. Get request for embedded data, including parsing.",
-    "img":              "images/responsibuyer.png"
+    "img":              "images/responsibuyer.png",
+    "projectUrl":       "http://responsibuyer.blueb.org:5000/static/index.html"
   },
   {
     "title":            "hue-manatee",
     "appdesc":          "App used to enhance and simplify the control of Phillips Hue Smart Bulbs.",
     "background":       "Philips Hue Lights (PHL) are a Wi-Fi-enabled lighting systems that allows lights to be controlled from any device. Kits sold include light bulbs that change color, white lights and a Hue Bridge (hub controller). Lights are controlled via Philips Hue Gen app. This app only allows individual lights to be controlled as part of a group, for example the living room. Hue-Manatee solves this problem, by allowing the user to control individual lights within a group. In addition hue-manatee eliminates the Wi-Fi requirement eliminating the need for a smart phone.",
-    "techused":         ["node.js","Javascript","MongoDb", "gulp", "SCSS", "AngularJS", "Express", "Mocha", "Chai", "Protractor"],
+    "techused":         "node.js, Javascript, MongoDb, gulp, SCSS, AngularJS, Express, Mocha, Chai, Protractor",
     "timeframe":        "2 weeks",
     "problems":         "Philips uses 66,000 hue color wheel, which could not be supported by Hue-Manatee. To overcome this problem we shortened down Philips color wheel to the standard color wheel. Heroku and Philips Bridge IP could not communicate. This was fixed by drilling a hole through the Heroku firewall, which allowed Heroku to recognize the Bridge IP.",
     "contributions":    "Created individual lights from Philips native groups. Wrote user authentication function. On the front end I created individual light manipulation function in accordance with Hue Light native function. Wrote testing functions.",
-    "img":              "images/hue-manatee.png"
+    "img":              "images/hue-manatee.png",
+    "projectUrl":       "http://hue-manatee.herokuapp.com/#/dashboard"
   },
   {
-    "title":            "twitter-react",
-    "appdesc":          "Discovery project, used to learn React as a framework.",
-    "background":       "This project was used to learn React to create interactive UIs. This app mimics Twitter create and delete functions.",
-    "techused":         ["node.js","Javascript","MongoDb", "gulp", "css", "ReactJS", "Express"],
-    "timeframe":        "2 days",
-    "problems":         "Learning new framework and integrating it with Node and Twitter API. Problem solved with a lot of documentation and Google research.",
-    "contributions":    "Initial Setup of Express server, Twitter router, process.env and Twitter Authenication using Mocha, Node and Express. Added setup for basic React, Bundle and gulp. Delete functionality using Rest, Json and React.",
-    "img":              "images/twitter-react.png"
+    "title":            "ebb-tracker",
+    "appdesc":          "Ad hoc reports based on user’s query about Seattle tide pools.",
+    "background":       "Current tide pool apps list popular tide pools around Seattle, however, they do not tell the user when low tide is for the best exploration experience. In addition these apps while giving directions to the pools do not indicate there location relative to the users location. Ebb-Tracker provides all this information.",
+    "techused":         "Javascript, Firebase, jQuery, PageJS, ChartJS, css, ReactJS, Express",
+    "timeframe":        "1 week",
+    "problems":         "Using a GET request did not allow us to manipulate NOAA API data. To overcome this we created a proxy server. Originally Firebase was used as the database and host but because of Firebase hosting shortcomings we used Heroku to host.",
+    "contributions":    "Accessed NOAA API, parsing and reformatting into user friendly data chucks for addition to a package.json file using JavaScript.",
+    "img":              "images/ebb-tracker.png"
   }
 ]
