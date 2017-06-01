@@ -6,7 +6,7 @@
 
   projectContoller.index = function() {
     $('.tab-content').hide();
-    $('#indproject').fadeIn();
+    $('#project').fadeIn();
   };
 
 
