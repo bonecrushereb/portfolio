@@ -14,6 +14,8 @@
     Projects.projectArr.forEach(function(a) {
 
       $('#project').append(a.toHtml($('#project-template')));
+      $('#indproject').append(a.toHtml($('#indproject-template')));
+
 
     });
 

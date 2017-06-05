@@ -14,8 +14,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background: #B27B3D;
-  color: #0D0D0D;
+  color: white;
 }
 
 .main-nav {
@@ -117,7 +116,6 @@ li.badge {
 }
 
 .main-footer {
-    background: #B27B3D;
     width: 100%;
   }
 

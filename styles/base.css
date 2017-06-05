@@ -4,6 +4,8 @@
 
 html {
   height: 100%;
+  background-image: url("../images/portfoliobackground.png");
+  background-size: cover;
 }
 
 body {
@@ -11,8 +13,7 @@ body {
   display: block;
   line-height: 1.5;
   font-size: 100%;
-  color: #0D0D0D;
-  background: #168BBA;
+  color: white;
   position: relative;
 }
 
@@ -53,12 +54,13 @@ address {
 =======================================*/
 
 a, a:link, a:active {
-  color: ##0D0D0D;
+  color: white;
   text-decoration: none;
   }
 }
 
 a:hover, a:focus {
+  color: blue;
 }
 
 a:visited {
