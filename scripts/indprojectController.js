@@ -1,5 +1,5 @@
 (function (module) {
-  var indprojectContoller = {};
+  var indprojectController = {};
 
   Projects.fetchProjects();
   portfolioView.initProjects();

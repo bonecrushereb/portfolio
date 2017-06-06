@@ -22,9 +22,9 @@
     </header>
   </script>
 
-  <!-- <script id="indproject-template" type="text/x-handlebars-template">
+  <script id="indproject-template" type="text/x-handlebars-template">
     {{#if title}}
-    <img src="{{projectUrl}}" alt="{{title}}"> {{#each indproject}}
+    <img src="{{projectUrl}}" alt="{{title}}"> {{#each project}}
       <section>
         <h2>{{title}}</h2>
         <p>{{appdesc}}</p>
@@ -35,8 +35,9 @@
         <h3>Development Problems</h3>
         <p>{{problems}}</p>
       </section>
+      {{/each}}
     {{/if}}
-  </script> -->
+  </script>
 
 </head>
 
@@ -169,7 +170,7 @@
   <script src="scripts/homeController.js"></script>
   <script src="scripts/aboutController.js"></script>
   <script src="scripts/projectController.js"></script>
-  <!-- <script src="scripts/indprojectController.js"></script> -->
+  <script src="scripts/indprojectController.js"></script>
   <script src="scripts/routes.js"></script>
 </body>
 </html>

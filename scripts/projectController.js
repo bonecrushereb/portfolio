@@ -1,14 +1,14 @@
 (function (module) {
-  var projectContoller = {};
+  var projectController = {};
 
   Projects.fetchProjects();
   portfolioView.initProjects();
 
-  projectContoller.index = function() {
+  projectController.index = function() {
     $('.tab-content').hide();
     $('#project').fadeIn();
   };
 
 
-  module.projectContoller = projectContoller;
+  module.projectController = projectController;
 })(window);

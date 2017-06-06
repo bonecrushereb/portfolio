@@ -34,7 +34,6 @@
   Projects.generateLoadContent = function(data) {
 
     Projects.projectArr = data.map(function(ele) {
-      console.log(ele);
       return new Projects(ele);
     });
 
