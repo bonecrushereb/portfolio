@@ -32,16 +32,10 @@
 
 
   Projects.generateLoadContent = function(data) {
-
     Projects.projectArr = data.map(function(ele) {
       return new Projects(ele);
     });
-
-    console.log('slugs',Projects.projectArr);
-    console.log('this is an array', data);
-
   };
-
 
   Projects.fetchProjects = fetchContent('projectsData', 'data/projectData.json');
 
