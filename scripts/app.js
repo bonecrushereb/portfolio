@@ -20,10 +20,12 @@
     return function() {
       if (localStorage[localStorageId]) {
         Projects.generateLoadContent(JSON.parse(localStorage[localStorageId]));
+        portfolioView.initProjects();
       } else {
         $.getJSON(jsonPath, function(data){
           localStorage.setItem(localStorageId , JSON.stringify(data));
-          console.log(localStorage.localStorageId);
+          Projects.generateLoadContent(data);
+          portfolioView.initProjects();
         });
       };
         // callback();

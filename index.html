@@ -14,11 +14,11 @@
   <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
 
   <script id="project-template" type="text/x-handlebars-template">
-    <header>
+    <header id="{{title}}">
       <h3>{{title}}</h3>
       <section>
         <action class="project-img">
-          <a href="{{projectUrl}}"><img src="{{img}}" alt=""></a>
+          <a href="/projects/{{title}}"><img src="{{img}}" alt=""></a>
         </action>
         <action>
           <p>{{appdesc}}</p>
@@ -153,6 +153,7 @@
   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
   <script src="scripts/app.js"></script>
   <script src="scripts/PortfolioView.js"></script>
+  <script src="scripts/indprojectController.js"></script>
   <script src="scripts/homeController.js"></script>
   <script src="scripts/aboutController.js"></script>
   <script src="scripts/projectController.js"></script>
