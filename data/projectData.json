@@ -29,6 +29,7 @@
     "timeframe":        "1 week",
     "problems":         "Using a GET request did not allow us to manipulate NOAA API data. To overcome this we created a proxy server. Originally Firebase was used as the database and host but because of Firebase hosting shortcomings we used Heroku to host.",
     "contributions":    "Accessed NOAA API, parsing and reformatting into user friendly data chucks for addition to a package.json file using JavaScript.",
-    "img":              "images/ebb-tracker.png"
+    "img":              "images/ebb-tracker.png",
+    "projectUrl":       "http://ebb-tracker.herokuapp.com"
   }
 ]

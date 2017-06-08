@@ -18,23 +18,18 @@
       <h3>{{title}}</h3>
       <section>
         <action class="project-img">
-          <a href="/projects/{{title}}"><img src="{{img}}" alt="{{title}}"></a>
+          <!-- This data-link attribute will be used to update the href in the indprojectController -->
+          <a data-link="{{projectUrl}}" href="/projects/{{title}}"><img src="{{img}}" alt="{{title}}"></a>
         </action>
         <action>
-        </action>
-      </section>
-    </header>
-  </script>
-
-  <script id="indproject-template" type="text/x-handlebars-template">
-    <header>
-      <h3>{{title}}</h3>
-      <section>
-        <action class="project-img">
-          <a href="{{projectUrl}}"><img src="{{img}}" alt="{{title}}"></a>
-        </action>
-        <action>
+          <!-- Assuming you will want this styled differently, but for functionality purposes,
+               everything has been wrapped in paragraph tags. -->
           <p>{{appdesc}}</p>
+          <p>{{background}}</p>
+          <p>{{techused}}</p>
+          <p>{{timeframe}}</p>
+          <p>{{problems}}</p>
+          <p>{{contributons}}</p>
         </action>
       </section>
     </header>
