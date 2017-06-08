@@ -8,6 +8,15 @@
   min-height: 100%;
   margin-bottom: -40px;
 }
+
+.home h1 {
+  font-size: 48px;
+}
+.intro h2 {
+  margin: 0 auto;
+  width: 75%;
+  font-size: 26px;
+}
   .main-header {
     flex-wrap: nowrap;
   }
@@ -17,6 +26,10 @@
     margin: 0;
     padding-top: 20px;
     width: 100px;
+  }
+  .main-header img {
+    height: 125px;
+    width: 125px;
   }
   .about img{
     margin-bottom: 0;
@@ -93,7 +106,6 @@
       height: 40px;
 }
   .main-footer {
-    background: #B27B3D;
     width: 100%;
   }
 
