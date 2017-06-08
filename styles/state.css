@@ -8,6 +8,15 @@
   min-height: 100%;
   margin-bottom: -40px;
 }
+
+.home h1 {
+  font-size: 48px;
+}
+.intro h2 {
+  margin: 0 auto;
+  width: 75%;
+  font-size: 26px;
+}
   .main-header {
     flex-wrap: nowrap;
   }
