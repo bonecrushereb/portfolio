@@ -18,7 +18,20 @@
       <h3>{{title}}</h3>
       <section>
         <action class="project-img">
-          <a href="/projects/{{title}}"><img src="{{img}}" alt=""></a>
+          <a href="/projects/{{title}}"><img src="{{img}}" alt="{{title}}"></a>
+        </action>
+        <action>
+        </action>
+      </section>
+    </header>
+  </script>
+
+  <script id="indproject-template" type="text/x-handlebars-template">
+    <header>
+      <h3>{{title}}</h3>
+      <section>
+        <action class="project-img">
+          <a href="{{projectUrl}}"><img src="{{img}}" alt="{{title}}"></a>
         </action>
         <action>
           <p>{{appdesc}}</p>
