@@ -1,13 +1,5 @@
 (function(module) {
 
-  if(window.location !== "http://localhost:5555/") {
-    $('html').css("background", "#1b2b32");
-  } else {
-    $('html').css("background-image", "url(\"../images/portfoliobackground.png\")");
-    $('html').css("background-repeat", "no-repeat");
-    $('html').css("background-size", "cover");
-  }
-
   function Projects (opts) {
     Object.keys(opts).forEach(function(property, keys) {
       this[property] = opts[property];
