@@ -3,7 +3,14 @@
 }
 
 html {
+  background: #1b2b32;
   height: 100%;
+}
+
+.home-page {
+  background-image: url("../images/portfoliobackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {

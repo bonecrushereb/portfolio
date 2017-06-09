@@ -8,7 +8,14 @@
     });
   };
 
-
+  portfolioView.changeBackground = function(ctx, next) {
+    if (ctx.canonicalPath !== '/') {
+      $('html').removeClass('home-page');
+      return next();
+    }
+    $('html').addClass('home-page');
+    next();
+  }
 
   portfolioView.initProjects = function() {
     Projects.projectArr.forEach(function(a) {
