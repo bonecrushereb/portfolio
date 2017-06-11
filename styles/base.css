@@ -44,11 +44,18 @@ p {
 
 div p {
   text-align: justify;
-  display: flex;
-  flex-wrap: wrap;
-  width: 95%;
-  margin-left: 10px;
-  margin-top: 25px;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.techused {
+  margin-bottom: 10px;
+  width: 10%;
+}
+
+.timeframe {
+  margin-bottom: 10px;
+  width: 15%;
 }
 
 address {
