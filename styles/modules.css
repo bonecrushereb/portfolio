@@ -89,9 +89,15 @@ section div {
   cursor: hand;
 }
 
-.showCode img {
-  width:100%;
+action p {
+  margin-bottom: 20px;
 }
+
+.specP {
+  width: 75px;
+  margin-left: 200px;
+}
+
 .main-footer, .push {
       height: 40px;
 }
