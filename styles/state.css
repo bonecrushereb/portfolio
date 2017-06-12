@@ -4,19 +4,20 @@
    margin: 0px;
  }
 
-.container {
-  min-height: 100%;
-  margin-bottom: -40px;
-}
+  .container {
+    min-height: 100%;
+    margin-bottom: -40px;
+  }
 
-.home h1 {
-  font-size: 48px;
-}
-.intro h2 {
-  margin: 0 auto;
-  width: 75%;
-  font-size: 26px;
-}
+  .home h1 {
+    font-size: 48px;
+  }
+  .intro h2 {
+    margin: 0 auto;
+    width: 75%;
+    font-size: 26px;
+  }
+
   .main-header {
     flex-wrap: nowrap;
   }
@@ -81,30 +82,39 @@
     display: block;
     width: 75%;
     position: relative;
-    left: 15%;
     margin-top: 25px;
   }
 
-.project-body{
-  width: 100%;
-  margin-left: 300px;
-}
+  .project-body{
+    width: 100%;
+    margin-left: 300px;
+  }
 
-.project-body {
-  width: 55%;
-}
+  .project-body {
+    width: 55%;
+  }
+
   .project-img img {
-    width: 50%;
-    height: 50%;
+    width: 75%;
   }
 
   .project-img img:hover {
     cursor: hand;
   }
 
+  .techused {
+    margin-bottom: 10px;
+    width: 40px;
+  }
+
+  .timeframe {
+    margin-bottom: 10px;
+    width: 60px;
+  }
+
   .main-footer, .push {
       height: 40px;
-}
+  }
   .main-footer {
     width: 100%;
   }
@@ -113,6 +123,14 @@
     text-align: center;
     padding: 0px;
     margin: 10px;
+  }
+
+  .project h3 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 36px;
   }
   .main-footer li {
     display: inline;
