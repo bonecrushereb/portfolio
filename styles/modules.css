@@ -76,13 +76,8 @@ section div {
   margin-bottom: 20px;
 }
 
-.byline a {
-  font-weight: bold;
-  text-decoration: none;
-}
-
 .project-img img {
-  width: 100%;
+  width: 95%;
 }
 
 .project-img img:hover {
@@ -90,7 +85,7 @@ section div {
 }
 
 action p {
-  margin: 0 auto; !important
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
