@@ -27,7 +27,6 @@
     });
 
     portfolioView.hamburgerClickEvent();
-
   };
 
   module.portfolioView = portfolioView;
