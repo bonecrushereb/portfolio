@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="home-page">
-
 <head>
   <meta charset="utf-8">
   <title>Ben Nolan Portfolio</title>
@@ -24,11 +23,11 @@
   <meta name="theme-color" content="#ffffff">
   <!-- end FAVICON -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="vendor/styles/normalize.css">
-  <link rel="stylesheet" href="styles/icons.css">
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/modules.css">
-  <link rel="stylesheet" href="styles/state.css">
+  <link rel="stylesheet" href="/vendor/styles/normalize.css">
+  <link rel="stylesheet" href="/styles/icons.css">
+  <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="/styles/modules.css">
+  <link rel="stylesheet" href="/styles/state.css">
   <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
 
   <script class="project" id="project-template" type="text/x-handlebars-template">
@@ -36,7 +35,7 @@
       <h3>{{title}}</h3>
       <section>
         <action class="project-img">
-          <a data-link="{{projectUrl}}" href="/projects/{{title}}"><img src="{{img}}" alt="{{title}}"></a>
+          <a data-link="{{projectUrl}}" href="/projects/{{title}}"><img src="/{{img}}" alt="{{title}}"></a>
         </action>
         <action>
           <p>{{appdesc}}</p>
@@ -59,9 +58,9 @@
 <body>
   <div class="container">
   <header class="main-header">
-    <img src="images/logo.png" alt="Ben logo">
+    <img src="/images/logo.png" alt="Ben logo">
     <h1>Benjamin Nolan</h1>
-    <img src="images/hamburger-menu.png" alt="hamburger-menu" class="icon-menu">
+    <img src="/images/hamburger-menu.png" alt="hamburger-menu" class="icon-menu">
     <nav class="main-nav">
       <ul>
         <li><a href="/">Home</a></li>
@@ -97,7 +96,7 @@
   </section>
 
   <section id="about" class="about tab-content">
-    <img src="images/profilepic.jpg" alt="profile picture">
+    <img src="/images/profilepic.jpg" alt="profile picture">
     <section>
       <p>Before I even started thinking about a career I played video games a lot inspiring me to be a part of their creation. I wanted to do the same, I wanted to continue this cycle which led to my background as an artist. While going to art school I interned and then later contracted at Sony Online Entertainment working with and manipulated data. With javascript I can easily marry design and development creating some fantastic websites. My name is Ben Nolan, I am a full stack javascript developer.</p>
     </section>
@@ -118,21 +117,21 @@
         <a class="icon-facebook2" href="https://www.facebook.com/BenEnOlan"></a>
       </li>
       <li>
-        <a class="icon-linkedin" href="www.linkedin.com/in/benjamin-nolan"></a>
+        <a class="icon-linkedin" href="https://www.linkedin.com/in/benjamin-nolan"></a>
       </li>
-      <li><a href="images/BenjaminNolanWebDeveloperJune.pdf">Resume</a></li>
+      <li><a href="/images/BenjaminNolanWebDeveloperJune.pdf">Resume</a></li>
     </ul>
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
-  <script src="scripts/app.js"></script>
-  <script src="scripts/PortfolioView.js"></script>
-  <script src="scripts/indprojectController.js"></script>
-  <script src="scripts/homeController.js"></script>
-  <script src="scripts/aboutController.js"></script>
-  <script src="scripts/projectController.js"></script>
-  <script src="scripts/routes.js"></script>
+  <script src="/scripts/app.js"></script>
+  <script src="/scripts/PortfolioView.js"></script>
+  <script src="/scripts/indprojectController.js"></script>
+  <script src="/scripts/homeController.js"></script>
+  <script src="/scripts/aboutController.js"></script>
+  <script src="/scripts/projectController.js"></script>
+  <script src="/scripts/routes.js"></script>
 </body>
 </html>
