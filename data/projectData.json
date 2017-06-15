@@ -1,5 +1,16 @@
 [
   {
+    "title":            "PortfolioShowcase",
+    "appdesc":          "App to showcase personal web development projects",
+    "background":       "This app is meant to be a quick way to view all projects completed by me or on a team. Each project has it's own desciption, timeframe and common technologies I have explored.",
+    "techused":         "Javascript Jquery HTML CSS PageJS",
+    "timeframe":        "2 weeks continued",
+    "problems":         "The biggest problem was trying to figure out how to get the projects broken down into their idividual JSON objects. My research concluded that I needed to use ctx.params.title to specify /projects/:title. Due to this method and some clash beteen pageJS and Express I ran into an issue that when a user goes to /projects/:title and refreshed all data would be lost and the page would be different therefore I had to check to see if the user was on the home page and if not load the data.",
+    "contributions":    "All aspects of this app was developed by myself",
+    "img":              "images/portfolio.png",
+    "projectUrl":       "http://benjaminnolan.herokuapp.com/"
+  },
+  {
     "title":            "responsibuyer",
     "appdesc":          "App to increase awareness of illegal or harmful products found overseas while on vacation, by providing examples of products that have a negative impact on wildlife.",
     "background":       "The Zoohackathon is sponsored by zoos around the world, this hackathons goal is to use technology to reduce demand for trafficked wildlife products. Responsibuyer addresses the issue of travelers who are unaware of products sold in a variety of countries that are made from trafficked wildlife.",
