@@ -8,6 +8,17 @@
     "problems":         "The biggest problem was trying to figure out how to get the projects broken down into their idividual JSON objects. My research concluded that I needed to use ctx.params.title to specify /projects/:title. Due to this method and some clash beteen pageJS and Express I ran into an issue that when a user goes to /projects/:title and refreshed all data would be lost and the page would be different therefore I had to check to see if the user was on the home page and if not load the data.",
     "contributions":    "All aspects of this app was developed by myself",
     "img":              "images/portfolio.png",
+    "projectUrl":       "https://bonecrushereb.github.io/rememberall/"
+  },
+  {
+    "title":            "rememberAll",
+    "appdesc":          "App to used to keep track of tasks, priorites and dates due",
+    "background":       "High functioning people with memory loss want to keep busy, however because of their memory loss they can not remember what they want to get done. Thats where this app comes in handy.",
+    "techused":         "Javascript Jquery HTML CSS",
+    "timeframe":        "2 weeks",
+    "problems":         "Finding the backbone for this app but incorporating priorites and dates with a date picker was a bit of challenge. To fix this it took patients and research to work around.",
+    "contributions":    "All aspects of this app was developed by myself",
+    "img":              "images/rememberall.png",
     "projectUrl":       "http://benjaminnolan.herokuapp.com/"
   },
   {
