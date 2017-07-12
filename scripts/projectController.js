@@ -1,14 +1,17 @@
 (function (module) {
-  var projectContoller = {};
+  var projectController = {};
 
-  Projects.fetchProjects();
-  portfolioView.initProjects();
-
-  projectContoller.index = function() {
+  Projects.fetchProjects(); 
+  projectController.index = function() {
     $('.tab-content').hide();
-    $('#project').fadeIn();
+    $('#project header action:last-child').hide();
+    $('#project, #project header').fadeIn();
+    $('#project header').each(function(i, ele) {
+      let eleTitle = $(ele).attr('id');
+      $(ele).find('a').attr('href', `/projects/${eleTitle}`);
+    });
   };
 
 
-  module.projectContoller = projectContoller;
+  module.projectController = projectController;
 })(window);

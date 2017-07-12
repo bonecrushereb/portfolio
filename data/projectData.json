@@ -1,23 +1,57 @@
 [
   {
-    "title":       "Game Art Portfolio",
-    "author":      "Ben Nolan",
-    "authorUrl":   "http://www.http://benjaminnolan.com/",
-    "body":        "<p>This was built while teaching myself code. It is also being used as my game art portfolio.</p>",
-    "img":         "images/GameArtWebSite.jpg"
+    "title":            "PortfolioShowcase",
+    "appdesc":          "App to showcase personal web development projects",
+    "background":       "This app is meant to be a quick way to view all projects completed by me or on a team. Each project has it's own desciption, timeframe and common technologies I have explored.",
+    "techused":         "Javascript Jquery HTML CSS PageJS",
+    "timeframe":        "2 weeks continued",
+    "problems":         "The biggest problem was trying to figure out how to get the projects broken down into their idividual JSON objects. My research concluded that I needed to use ctx.params.title to specify /projects/:title. Due to this method and some clash beteen pageJS and Express I ran into an issue that when a user goes to /projects/:title and refreshed all data would be lost and the page would be different therefore I had to check to see if the user was on the home page and if not load the data.",
+    "contributions":    "All aspects of this app was developed by myself",
+    "img":              "images/portfolio.png",
+    "projectUrl":       "https://bonecrushereb.github.io/rememberall/"
   },
   {
-    "title":       "Skydiving Experience",
-    "author":      "Ben Nolan",
-    "authorUrl":   "http://skydivingexperience.comuv.com/",
-    "body":        "<p>This site was developed as a final project at Mira Mar community college</p>",
-    "img":         "images/SkydivingExperience.jpg"
+    "title":            "rememberAll",
+    "appdesc":          "App to used to keep track of tasks, priorites and dates due",
+    "background":       "High functioning people with memory loss want to keep busy, however because of their memory loss they can not remember what they want to get done. Thats where this app comes in handy.",
+    "techused":         "Javascript Jquery HTML CSS",
+    "timeframe":        "2 weeks",
+    "problems":         "Finding the backbone for this app but incorporating priorites and dates with a date picker was a bit of challenge. To fix this it took patients and research to work around.",
+    "contributions":    "All aspects of this app was developed by myself",
+    "img":              "images/rememberall.png",
+    "projectUrl":       "http://benjaminnolan.herokuapp.com/"
   },
   {
-    "title":       "United By DNA Mockup",
-    "author":      "Ben Nolan",
-    "authorUrl":   "https://www.unitedbydna.org/",
-    "body":        "<p>I volunteered for this organization. They wanted me to design a wireframe for them, however I went above and beyond and even helped them develope a mockup. However they have not implemented any changes into their site.</p>",
-    "img":         "images/unitedbydenamockup.jpg"
+    "title":            "responsibuyer",
+    "appdesc":          "App to increase awareness of illegal or harmful products found overseas while on vacation, by providing examples of products that have a negative impact on wildlife.",
+    "background":       "The Zoohackathon is sponsored by zoos around the world, this hackathons goal is to use technology to reduce demand for trafficked wildlife products. Responsibuyer addresses the issue of travelers who are unaware of products sold in a variety of countries that are made from trafficked wildlife.",
+    "techused":         "Javascript Python css",
+    "timeframe":        "2 days",
+    "problems":         "No public API existed for the App data. An embedded data source was created which included data from Wikipedia, Google Maps, IUCN Redlist API, Wildlife trade tracker",
+    "contributions":    "Autocomplete functionality based on Google Map data. Style sheets. Newsfeed information into Json file including testing. Get request for embedded data, including parsing.",
+    "img":              "images/responsibuyer.png",
+    "projectUrl":       "http://responsibuyer.blueb.org:5000/static/index.html"
+  },
+  {
+    "title":            "hue-manatee",
+    "appdesc":          "App used to enhance and simplify the control of Phillips Hue Smart Bulbs.",
+    "background":       "Philips Hue Lights (PHL) are a Wi-Fi-enabled lighting systems that allows lights to be controlled from any device. Kits sold include light bulbs that change color, white lights and a Hue Bridge (hub controller). Lights are controlled via Philips Hue Gen app. This app only allows individual lights to be controlled as part of a group, for example the living room. Hue-Manatee solves this problem, by allowing the user to control individual lights within a group. In addition hue-manatee eliminates the Wi-Fi requirement eliminating the need for a smart phone.",
+    "techused":         "node.js Javascript MongoDb gulp SCSS AngularJS Express Mocha Chai Protractor",
+    "timeframe":        "2 weeks",
+    "problems":         "Philips uses 66,000 hue color wheel, which could not be supported by Hue-Manatee. To overcome this problem we shortened down Philips color wheel to the standard color wheel. Heroku and Philips Bridge IP could not communicate. This was fixed by drilling a hole through the Heroku firewall, which allowed Heroku to recognize the Bridge IP.",
+    "contributions":    "Created individual lights from Philips native groups. Wrote user authentication function. On the front end I created individual light manipulation function in accordance with Hue Light native function. Wrote testing functions.",
+    "img":              "images/hue-manatee.png",
+    "projectUrl":       "http://hue-manatee.herokuapp.com/#/dashboard"
+  },
+  {
+    "title":            "ebb-tracker",
+    "appdesc":          "Ad hoc reports based on user’s query about Seattle tide pools.",
+    "background":       "Current tide pool apps list popular tide pools around Seattle, however, they do not tell the user when low tide is for the best exploration experience. In addition these apps while giving directions to the pools do not indicate there location relative to the users location. Ebb-Tracker provides all this information.",
+    "techused":         "Javascript Firebase jQuery PageJS ChartJS css ReactJS Express",
+    "timeframe":        "1 week",
+    "problems":         "Using a GET request did not allow us to manipulate NOAA API data. To overcome this we created a proxy server. Originally Firebase was used as the database and host but because of Firebase hosting shortcomings we used Heroku to host.",
+    "contributions":    "Accessed NOAA API, parsing and reformatting into user friendly data chucks for addition to a package.json file using JavaScript.",
+    "img":              "images/ebb-tracker.png",
+    "projectUrl":       "http://ebb-tracker.herokuapp.com"
   }
 ]

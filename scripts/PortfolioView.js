@@ -5,35 +5,28 @@
   portfolioView.hamburgerClickEvent = function() {
     $('.icon-menu').on('click', function() {
       $('.main-nav ul').toggle();
-      console.log('I am functioning');
     });
   };
 
-  portfolioView.codeShow = function(){
-    $('.badge').on('click', function() {
-      $(this).find('.showCode').toggle();
-      console.log('badges is functioning');
-    });
-  };
-
+  portfolioView.changeBackground = function(ctx, next) {
+    if (ctx.canonicalPath !== '/') {
+      $('html').removeClass('home-page');
+      return next();
+    }
+    $('html').addClass('home-page');
+    next();
+  }
 
   portfolioView.initProjects = function() {
-    console.log('initProjects is firing', Projects.projectArr);
     Projects.projectArr.forEach(function(a) {
 
       $('#project').append(a.toHtml($('#project-template')));
+      $('#indproject').append(a.toHtml($('#indproject-template')));
+
 
     });
 
     portfolioView.hamburgerClickEvent();
-  };
-
-  portfolioView.initBadges = function() {
-    Projects.badgesArr.forEach(function(a) {
-      $('.skills-list').append(a.toHtml('#skills-template'));
-    });
-
-    portfolioView.codeShow();
   };
 
   module.portfolioView = portfolioView;

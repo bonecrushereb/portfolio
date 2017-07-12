@@ -1,59 +1,82 @@
 <!DOCTYPE html>
-<html>
-
+<html class="home-page">
 <head>
   <meta charset="utf-8">
   <title>Ben Nolan Portfolio</title>
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- end FAVICON -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="vendor/styles/normalize.css">
-  <link rel="stylesheet" href="styles/icons.css">
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/modules.css">
-  <link rel="stylesheet" href="styles/state.css">
-
+  <link rel="stylesheet" href="/vendor/styles/normalize.css">
+  <link rel="stylesheet" href="/styles/icons.css">
+  <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="/styles/modules.css">
+  <link rel="stylesheet" href="/styles/state.css">
   <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
 
-  <script id="project-template" type="text/x-handlebars-template">
-    <header>
+  <script class="project" id="project-template" type="text/x-handlebars-template">
+    <header id="{{title}}">
       <h3>{{title}}</h3>
-      <section class="project-img">
-        <a href="{{authorUrl}}"><img src="{{img}}" alt=""></a>
+      <section>
+        <action class="project-img">
+          <a data-link="{{projectUrl}}" href="/projects/{{title}}"><img src="/{{img}}" alt="{{title}}"></a>
+        </action>
+        <action>
+          <p>{{appdesc}}</p>
+          <h3>Background</h3>
+          <p>{{background}}</p>
+          <h3>Technology Used</h3>
+          <p class="techused">{{techused}}</p>
+          <h3>TimeFrame</h3>
+          <p class="timeframe">{{timeframe}}</p>
+          <h3>Development Problems</h3>
+          <p>{{problems}}</p>
+          <h3>Personal Contributions</h3>
+          <p>{{contributions}}</p>
+        </action>
       </section>
-      <section class="project-body">
-      {{{body}}}
-      </section>
-      <div class="byline">
-        By <address><a href="{{authorUrl}}">{{author}}</a></address>
-      </div>
     </header>
   </script>
-
-  <script id="skills-template" type="text/x-handlebars-template">
-        <li class="badge"><img src="{{img}}" tag=""><div class="showCode"><img src="{{body}}" tag=""></div></li>
-  </script>
-
 </head>
 
 <body>
   <div class="container">
   <header class="main-header">
+    <img src="/images/logo.png" alt="Ben logo">
     <h1>Benjamin Nolan</h1>
-    <img src="images/hamburger-menu.png" alt="hamburger-menu" class="icon-menu"/>
+    <img src="/images/hamburger-menu.png" alt="hamburger-menu" class="icon-menu">
     <nav class="main-nav">
       <ul>
-        <li class="tab icon-book" data-content="about"><a href="/">About</a></li>
+        <li><a href="/">Home</a></li>
         <li class="tab icon-folder" data-content="project"><a href="/projects">Projects</a></li>
-        <li class="tab icon-stats-bars" data-content="skills"><a href="/skills">Skills</a></li>
+        <li data-content="about" data-content="about"><a href="/about">About</a></li>
       </ul>
     </nav>
   </header>
-  <section id="about" class="about tab-content">
-    <header><h2>About Me</h2></header>
+  <section id="home" class="home tab-content">
+    <header>
+      <h1>Benjamin E Nolan</h1>
+    </header>
     <section>
-      <img src="images/BenNolanProfile.jpg" alt="ProfilePic">
-      <div>
-        <p> Hello, I am Ben Nolan. I am just starting out in Web Design and Development. Don't let that scare you though,I have been working on my abilities for over a year, and have just completed (July 2016) Code Fellows Full Stack JavaScript Coding. Web Design and Development is a perfect fit for me. I love the art aspect of design, but also enjoy solving puzzles. We all know fitting coding pieces together can be quite challenging. My biggest desire is to bring the visual joy i enjoy with good artwork and site performance to others. When Sony Online Entertainment became Daybreak studios,they consolidated their art production. I was one of the people laid off during that consolidateion, but my manager there remains one of my biggest supporters and references. Despite  they layoff, my experience at Sony is invaluable. There I learned how to work with QA, meet production deadlines and to be an "extra pair of hands" for the entire team.  No job was too small for me. While my wife finished her college degree and we completed our move to the Seattle area, I began my journey with Web Art and Developement. To date my journey has taught me patience, self-reliance and how much I enjoy learning new techniques and new ideas.  On my own I learned basic HTML, CSS and Javascript. Code Fellows completes this training. I find my tenacity, sense of humor, loyalty and love of learning have been more than helpful on the journey.  I look forward to the next chapter.</p>
-      </div>
+      <article class="intro">
+        <h2>A Full Stack Javascript Developer with a background in art I can take your designs and turn them into reality.<br>Why don't you come on this journey with me.</h2>
+      </article>
     </section>
   </section>
 
@@ -66,15 +89,16 @@
     </section>
   </section>
 
-  <section id="skills" class="tab-content">
-    <header>
-      <h2>Skills</h2>
-    </header>
+  <section id="indproject" class="tab-content">
     <section>
-      <article>
-        <ul class="skills-list template">
-        </ul>
-      </article>
+      <article id="indproject-template" class="template template"></article>
+    </section>
+  </section>
+
+  <section id="about" class="about tab-content">
+    <img src="/images/profilepic.jpg" alt="profile picture">
+    <section>
+      <p>Prior to a Certificate in Full Stack Javascript Development I recieved a bachelors in Game Art and Design from the Art Institute of San Diego, Califronia. Upon recieving my degree I worked for Sony Online Entertainment where the majority of the time I was spent collating data for the propriatry softwares. My work gave me an idea that I actually enjoy working with data. Since then I have been working on honing my skills in html, css and javascript but most recently started using AngularJS and React. I have also been attending hackathons and building my github with projects.</p>
     </section>
   </section>
 
@@ -93,20 +117,21 @@
         <a class="icon-facebook2" href="https://www.facebook.com/BenEnOlan"></a>
       </li>
       <li>
-        <a class="icon-linkedin" href="https://www.linkedin.com/in/ben-nolan-28513349"></a>
+        <a class="icon-linkedin" href="https://www.linkedin.com/in/benjamin-nolan"></a>
       </li>
+      <li><a href="/images/BenjaminNolanWebDeveloperJune.pdf">Resume</a></li>
     </ul>
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
-  <!-- <script src="Treehouse_badge_widget/js/reportcard/js/reportcard.js"></script> -->
-  <script src="scripts/app.js"></script>
-  <script src="scripts/PortfolioView.js"></script>
-  <script src="scripts/aboutController.js"></script>
-  <script src="scripts/projectController.js"></script>
-  <script src="scripts/skillsController.js"></script>
-  <script src="scripts/routes.js"></script>
+  <script src="/scripts/app.js"></script>
+  <script src="/scripts/PortfolioView.js"></script>
+  <script src="/scripts/indprojectController.js"></script>
+  <script src="/scripts/homeController.js"></script>
+  <script src="/scripts/aboutController.js"></script>
+  <script src="/scripts/projectController.js"></script>
+  <script src="/scripts/routes.js"></script>
 </body>
 </html>

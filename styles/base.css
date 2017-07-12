@@ -3,7 +3,14 @@
 }
 
 html {
+  background: #1b2b32;
   height: 100%;
+}
+
+.home-page {
+  background-image: url("../images/portfoliobackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
@@ -11,8 +18,7 @@ body {
   display: block;
   line-height: 1.5;
   font-size: 100%;
-  color: #0D0D0D;
-  background: #168BBA;
+  color: white;
   position: relative;
 }
 
@@ -38,11 +44,19 @@ p {
 
 div p {
   text-align: justify;
-  display: flex;
-  flex-wrap: wrap;
-  width: 95%;
-  margin-left: 10px;
-  margin-top: 25px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  width: 75%;
+}
+
+.techused {
+  margin-bottom: 10px;
+  width: 10%;
+}
+
+.timeframe {
+  margin-bottom: 10px;
+  width: 15%;
 }
 
 address {
@@ -53,12 +67,13 @@ address {
 =======================================*/
 
 a, a:link, a:active {
-  color: ##0D0D0D;
+  color: white;
   text-decoration: none;
   }
 }
 
 a:hover, a:focus {
+  color: blue;
 }
 
 a:visited {
