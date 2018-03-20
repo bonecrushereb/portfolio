@@ -1,5 +1,16 @@
 [
   {
+    "title":            "expensify",
+    "appdesc":          "Keep track of expenses and when they are due.",
+    "background":       "Everyone likes keeping track of their expenses this app not only keeps track but allows the user to sort based on their selected filter. The app uses google authentication to login to the app and firebase for it's database.",
+    "techused":         "Javascript Firebase SCSS ReactJS Express jest babel redux webpack enzyme",
+    "timeframe":        "2 months",
+    "problems":         "Problem with travis accepting locally passing tests.",
+    "contributions":    " Set up firebase and authentication while building out app",
+    "img":              "images/expensify.png",
+    "projectUrl":       "http://https://expensifybybennolan.herokuapp.com"
+  },
+  {
     "title":            "PortfolioShowcase",
     "appdesc":          "App to showcase personal web development projects",
     "background":       "This app is meant to be a quick way to view all projects completed by me or on a team. Each project has it's own desciption, timeframe and common technologies I have explored.",
